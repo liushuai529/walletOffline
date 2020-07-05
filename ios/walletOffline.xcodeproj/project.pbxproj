@@ -1,0 +1,1137 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* walletOfflineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* walletOfflineTests.m */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19AB8D2975380A1E987FD75B /* libPods-walletOffline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D1EBEB9D068CB897F6CF40 /* libPods-walletOffline.a */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* walletOfflineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* walletOfflineTests.m */; };
+		4B9BA60D24B1CFD200F6D4F7 /* libTrustWalletCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C024B1CFD100F6D4F7 /* libTrustWalletCore.a */; };
+		4B9BA60E24B1CFD200F6D4F7 /* libTrezorCrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C124B1CFD200F6D4F7 /* libTrezorCrypto.a */; };
+		4B9BA60F24B1CFD200F6D4F7 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C224B1CFD200F6D4F7 /* libprotobuf.a */; };
+		4B9BA61024B1CFD200F6D4F7 /* CreateWallet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA5C524B1CFD200F6D4F7 /* CreateWallet.mm */; };
+		651EBF07BC6DEB7131EA99AF /* libPods-walletOffline-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35235DB7BB3D990DF7D8626A /* libPods-walletOffline-tvOSTests.a */; };
+		7A69AC5A281C220BB7BDF3C3 /* libPods-walletOffline-walletOfflineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD016DE6DF88AA0065C71263 /* libPods-walletOffline-walletOfflineTests.a */; };
+		CC9886CF99AF259E07189F52 /* libPods-walletOffline-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D009262381B07929ADF86C /* libPods-walletOffline-tvOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = walletOffline;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "walletOffline-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* walletOfflineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walletOfflineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* walletOfflineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = walletOfflineTests.m; sourceTree = "<group>"; };
+		09D1EBEB9D068CB897F6CF40 /* libPods-walletOffline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-walletOffline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* walletOffline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walletOffline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = walletOffline/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = walletOffline/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = walletOffline/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = walletOffline/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = walletOffline/main.m; sourceTree = "<group>"; };
+		1F55E09340888BC707B32E6F /* Pods-walletOffline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline.debug.xcconfig"; path = "Target Support Files/Pods-walletOffline/Pods-walletOffline.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* walletOffline-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walletOffline-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* walletOffline-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walletOffline-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35235DB7BB3D990DF7D8626A /* libPods-walletOffline-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-walletOffline-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9BA5C024B1CFD100F6D4F7 /* libTrustWalletCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTrustWalletCore.a; sourceTree = "<group>"; };
+		4B9BA5C124B1CFD200F6D4F7 /* libTrezorCrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTrezorCrypto.a; sourceTree = "<group>"; };
+		4B9BA5C224B1CFD200F6D4F7 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotobuf.a; sourceTree = "<group>"; };
+		4B9BA5C424B1CFD200F6D4F7 /* CreateWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateWallet.h; sourceTree = "<group>"; };
+		4B9BA5C524B1CFD200F6D4F7 /* CreateWallet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreateWallet.mm; sourceTree = "<group>"; };
+		4B9BA5C724B1CFD200F6D4F7 /* TWPurpose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPurpose.h; sourceTree = "<group>"; };
+		4B9BA5C824B1CFD200F6D4F7 /* TWNanoProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNanoProto.h; sourceTree = "<group>"; };
+		4B9BA5C924B1CFD200F6D4F7 /* TWCoinTypeConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCoinTypeConfiguration.h; sourceTree = "<group>"; };
+		4B9BA5CA24B1CFD200F6D4F7 /* TWHDWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHDWallet.h; sourceTree = "<group>"; };
+		4B9BA5CB24B1CFD200F6D4F7 /* TWData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWData.h; sourceTree = "<group>"; };
+		4B9BA5CC24B1CFD200F6D4F7 /* TWEthereumProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEthereumProto.h; sourceTree = "<group>"; };
+		4B9BA5CD24B1CFD200F6D4F7 /* TWEOSProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEOSProto.h; sourceTree = "<group>"; };
+		4B9BA5CE24B1CFD200F6D4F7 /* TWBitcoinSigHashType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBitcoinSigHashType.h; sourceTree = "<group>"; };
+		4B9BA5CF24B1CFD200F6D4F7 /* TWAnySigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAnySigner.h; sourceTree = "<group>"; };
+		4B9BA5D024B1CFD200F6D4F7 /* TWHRP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHRP.h; sourceTree = "<group>"; };
+		4B9BA5D124B1CFD200F6D4F7 /* TWNEOProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNEOProto.h; sourceTree = "<group>"; };
+		4B9BA5D224B1CFD200F6D4F7 /* TWBitcoinProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBitcoinProto.h; sourceTree = "<group>"; };
+		4B9BA5D324B1CFD200F6D4F7 /* TWDecredProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDecredProto.h; sourceTree = "<group>"; };
+		4B9BA5D424B1CFD200F6D4F7 /* TWNULSProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNULSProto.h; sourceTree = "<group>"; };
+		4B9BA5D524B1CFD200F6D4F7 /* TWAeternityProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAeternityProto.h; sourceTree = "<group>"; };
+		4B9BA5D624B1CFD200F6D4F7 /* TWSegwitAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSegwitAddress.h; sourceTree = "<group>"; };
+		4B9BA5D724B1CFD200F6D4F7 /* TWEthereumAbiValueEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEthereumAbiValueEncoder.h; sourceTree = "<group>"; };
+		4B9BA5D824B1CFD200F6D4F7 /* TWOntologyProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWOntologyProto.h; sourceTree = "<group>"; };
+		4B9BA5D924B1CFD200F6D4F7 /* TWStellarMemoType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStellarMemoType.h; sourceTree = "<group>"; };
+		4B9BA5DA24B1CFD200F6D4F7 /* TWVeChainProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWVeChainProto.h; sourceTree = "<group>"; };
+		4B9BA5DB24B1CFD200F6D4F7 /* TWBitcoinAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBitcoinAddress.h; sourceTree = "<group>"; };
+		4B9BA5DC24B1CFD200F6D4F7 /* TWPrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPrivateKey.h; sourceTree = "<group>"; };
+		4B9BA5DD24B1CFD200F6D4F7 /* TWAnyAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAnyAddress.h; sourceTree = "<group>"; };
+		4B9BA5DE24B1CFD200F6D4F7 /* TWFilecoinProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFilecoinProto.h; sourceTree = "<group>"; };
+		4B9BA5DF24B1CFD200F6D4F7 /* TWEthereumAbiEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEthereumAbiEncoder.h; sourceTree = "<group>"; };
+		4B9BA5E024B1CFD200F6D4F7 /* TWElrondProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWElrondProto.h; sourceTree = "<group>"; };
+		4B9BA5E124B1CFD200F6D4F7 /* TWNimiqProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNimiqProto.h; sourceTree = "<group>"; };
+		4B9BA5E224B1CFD200F6D4F7 /* TWBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBase58.h; sourceTree = "<group>"; };
+		4B9BA5E324B1CFD200F6D4F7 /* TWHDVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHDVersion.h; sourceTree = "<group>"; };
+		4B9BA5E424B1CFD200F6D4F7 /* TWSS58AddressType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSS58AddressType.h; sourceTree = "<group>"; };
+		4B9BA5E524B1CFD200F6D4F7 /* TWRippleXAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRippleXAddress.h; sourceTree = "<group>"; };
+		4B9BA5E624B1CFD200F6D4F7 /* TWIoTeXProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIoTeXProto.h; sourceTree = "<group>"; };
+		4B9BA5E724B1CFD200F6D4F7 /* TWFIOProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFIOProto.h; sourceTree = "<group>"; };
+		4B9BA5E824B1CFD200F6D4F7 /* TWCoinType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCoinType.h; sourceTree = "<group>"; };
+		4B9BA5E924B1CFD200F6D4F7 /* TWZilliqaProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWZilliqaProto.h; sourceTree = "<group>"; };
+		4B9BA5EA24B1CFD200F6D4F7 /* TWPublicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPublicKey.h; sourceTree = "<group>"; };
+		4B9BA5EB24B1CFD200F6D4F7 /* TWStellarProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStellarProto.h; sourceTree = "<group>"; };
+		4B9BA5EC24B1CFD200F6D4F7 /* TWTronProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTronProto.h; sourceTree = "<group>"; };
+		4B9BA5ED24B1CFD200F6D4F7 /* TWIconProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIconProto.h; sourceTree = "<group>"; };
+		4B9BA5EE24B1CFD200F6D4F7 /* TWThetaProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWThetaProto.h; sourceTree = "<group>"; };
+		4B9BA5EF24B1CFD200F6D4F7 /* TWTezosProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTezosProto.h; sourceTree = "<group>"; };
+		4B9BA5F024B1CFD200F6D4F7 /* TWAlgorandProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAlgorandProto.h; sourceTree = "<group>"; };
+		4B9BA5F124B1CFD200F6D4F7 /* TWCosmosProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCosmosProto.h; sourceTree = "<group>"; };
+		4B9BA5F224B1CFD200F6D4F7 /* TWNEARProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNEARProto.h; sourceTree = "<group>"; };
+		4B9BA5F324B1CFD200F6D4F7 /* TWRippleProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRippleProto.h; sourceTree = "<group>"; };
+		4B9BA5F424B1CFD200F6D4F7 /* TWCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCurve.h; sourceTree = "<group>"; };
+		4B9BA5F524B1CFD200F6D4F7 /* TWAionProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAionProto.h; sourceTree = "<group>"; };
+		4B9BA5F624B1CFD200F6D4F7 /* TWStellarPassphrase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStellarPassphrase.h; sourceTree = "<group>"; };
+		4B9BA5F724B1CFD200F6D4F7 /* TWHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHash.h; sourceTree = "<group>"; };
+		4B9BA5F824B1CFD200F6D4F7 /* TWStoredKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStoredKey.h; sourceTree = "<group>"; };
+		4B9BA5F924B1CFD200F6D4F7 /* TWPublicKeyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPublicKeyType.h; sourceTree = "<group>"; };
+		4B9BA5FA24B1CFD200F6D4F7 /* TWBitcoinScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBitcoinScript.h; sourceTree = "<group>"; };
+		4B9BA5FB24B1CFD200F6D4F7 /* TWFIOAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFIOAccount.h; sourceTree = "<group>"; };
+		4B9BA5FC24B1CFD200F6D4F7 /* TWGroestlcoinAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGroestlcoinAddress.h; sourceTree = "<group>"; };
+		4B9BA5FD24B1CFD200F6D4F7 /* TWPolkadotProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPolkadotProto.h; sourceTree = "<group>"; };
+		4B9BA5FE24B1CFD200F6D4F7 /* TWEthereumAbiFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEthereumAbiFunction.h; sourceTree = "<group>"; };
+		4B9BA5FF24B1CFD200F6D4F7 /* TWBinanceProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBinanceProto.h; sourceTree = "<group>"; };
+		4B9BA60024B1CFD200F6D4F7 /* TWBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBase.h; sourceTree = "<group>"; };
+		4B9BA60124B1CFD200F6D4F7 /* TWStellarVersionByte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStellarVersionByte.h; sourceTree = "<group>"; };
+		4B9BA60224B1CFD200F6D4F7 /* TWSolanaProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSolanaProto.h; sourceTree = "<group>"; };
+		4B9BA60324B1CFD200F6D4F7 /* TWAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAES.h; sourceTree = "<group>"; };
+		4B9BA60424B1CFD200F6D4F7 /* TWFoundationString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFoundationString.h; sourceTree = "<group>"; };
+		4B9BA60524B1CFD200F6D4F7 /* TWHarmonyProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHarmonyProto.h; sourceTree = "<group>"; };
+		4B9BA60624B1CFD200F6D4F7 /* TWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAccount.h; sourceTree = "<group>"; };
+		4B9BA60724B1CFD200F6D4F7 /* TWNebulasProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNebulasProto.h; sourceTree = "<group>"; };
+		4B9BA60824B1CFD200F6D4F7 /* TWEthereumChainID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEthereumChainID.h; sourceTree = "<group>"; };
+		4B9BA60924B1CFD200F6D4F7 /* TWString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWString.h; sourceTree = "<group>"; };
+		4B9BA60A24B1CFD200F6D4F7 /* TWWavesProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWWavesProto.h; sourceTree = "<group>"; };
+		4B9BA60B24B1CFD200F6D4F7 /* TWFoundationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFoundationData.h; sourceTree = "<group>"; };
+		4B9BA60C24B1CFD200F6D4F7 /* TWBlockchain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBlockchain.h; sourceTree = "<group>"; };
+		7F6D25BE2A677FC6B86050C8 /* Pods-walletOffline-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOSTests/Pods-walletOffline-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		89A7D0011F6DE80E8B850C20 /* Pods-walletOffline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline.release.xcconfig"; path = "Target Support Files/Pods-walletOffline/Pods-walletOffline.release.xcconfig"; sourceTree = "<group>"; };
+		93324C480CBF6C41AB748B76 /* Pods-walletOffline-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOS.release.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOS/Pods-walletOffline-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		AD016DE6DF88AA0065C71263 /* libPods-walletOffline-walletOfflineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-walletOffline-walletOfflineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2D2C7A2849D0D77CF1BF3E /* Pods-walletOffline-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOSTests/Pods-walletOffline-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D26593237C484011A0C32B45 /* Pods-walletOffline-walletOfflineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-walletOfflineTests.release.xcconfig"; path = "Target Support Files/Pods-walletOffline-walletOfflineTests/Pods-walletOffline-walletOfflineTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3D009262381B07929ADF86C /* libPods-walletOffline-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-walletOffline-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F28AA53EFD580760B06B3F32 /* Pods-walletOffline-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOS/Pods-walletOffline-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F35ED15D58176D4AC8CFF81A /* Pods-walletOffline-walletOfflineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-walletOfflineTests.debug.xcconfig"; path = "Target Support Files/Pods-walletOffline-walletOfflineTests/Pods-walletOffline-walletOfflineTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A69AC5A281C220BB7BDF3C3 /* libPods-walletOffline-walletOfflineTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9BA60F24B1CFD200F6D4F7 /* libprotobuf.a in Frameworks */,
+				4B9BA60D24B1CFD200F6D4F7 /* libTrustWalletCore.a in Frameworks */,
+				19AB8D2975380A1E987FD75B /* libPods-walletOffline.a in Frameworks */,
+				4B9BA60E24B1CFD200F6D4F7 /* libTrezorCrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9886CF99AF259E07189F52 /* libPods-walletOffline-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651EBF07BC6DEB7131EA99AF /* libPods-walletOffline-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* walletOfflineTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* walletOfflineTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = walletOfflineTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* walletOffline */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA5BF24B1CFBF00F6D4F7 /* wallet */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = walletOffline;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				09D1EBEB9D068CB897F6CF40 /* libPods-walletOffline.a */,
+				E3D009262381B07929ADF86C /* libPods-walletOffline-tvOS.a */,
+				35235DB7BB3D990DF7D8626A /* libPods-walletOffline-tvOSTests.a */,
+				AD016DE6DF88AA0065C71263 /* libPods-walletOffline-walletOfflineTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B9BA5BF24B1CFBF00F6D4F7 /* wallet */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA5C224B1CFD200F6D4F7 /* libprotobuf.a */,
+				4B9BA5C124B1CFD200F6D4F7 /* libTrezorCrypto.a */,
+				4B9BA5C024B1CFD100F6D4F7 /* libTrustWalletCore.a */,
+				4B9BA5C324B1CFD200F6D4F7 /* modules */,
+				4B9BA5C624B1CFD200F6D4F7 /* TrustWalletCore */,
+			);
+			name = wallet;
+			sourceTree = "<group>";
+		};
+		4B9BA5C324B1CFD200F6D4F7 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA5C424B1CFD200F6D4F7 /* CreateWallet.h */,
+				4B9BA5C524B1CFD200F6D4F7 /* CreateWallet.mm */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		4B9BA5C624B1CFD200F6D4F7 /* TrustWalletCore */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA5C724B1CFD200F6D4F7 /* TWPurpose.h */,
+				4B9BA5C824B1CFD200F6D4F7 /* TWNanoProto.h */,
+				4B9BA5C924B1CFD200F6D4F7 /* TWCoinTypeConfiguration.h */,
+				4B9BA5CA24B1CFD200F6D4F7 /* TWHDWallet.h */,
+				4B9BA5CB24B1CFD200F6D4F7 /* TWData.h */,
+				4B9BA5CC24B1CFD200F6D4F7 /* TWEthereumProto.h */,
+				4B9BA5CD24B1CFD200F6D4F7 /* TWEOSProto.h */,
+				4B9BA5CE24B1CFD200F6D4F7 /* TWBitcoinSigHashType.h */,
+				4B9BA5CF24B1CFD200F6D4F7 /* TWAnySigner.h */,
+				4B9BA5D024B1CFD200F6D4F7 /* TWHRP.h */,
+				4B9BA5D124B1CFD200F6D4F7 /* TWNEOProto.h */,
+				4B9BA5D224B1CFD200F6D4F7 /* TWBitcoinProto.h */,
+				4B9BA5D324B1CFD200F6D4F7 /* TWDecredProto.h */,
+				4B9BA5D424B1CFD200F6D4F7 /* TWNULSProto.h */,
+				4B9BA5D524B1CFD200F6D4F7 /* TWAeternityProto.h */,
+				4B9BA5D624B1CFD200F6D4F7 /* TWSegwitAddress.h */,
+				4B9BA5D724B1CFD200F6D4F7 /* TWEthereumAbiValueEncoder.h */,
+				4B9BA5D824B1CFD200F6D4F7 /* TWOntologyProto.h */,
+				4B9BA5D924B1CFD200F6D4F7 /* TWStellarMemoType.h */,
+				4B9BA5DA24B1CFD200F6D4F7 /* TWVeChainProto.h */,
+				4B9BA5DB24B1CFD200F6D4F7 /* TWBitcoinAddress.h */,
+				4B9BA5DC24B1CFD200F6D4F7 /* TWPrivateKey.h */,
+				4B9BA5DD24B1CFD200F6D4F7 /* TWAnyAddress.h */,
+				4B9BA5DE24B1CFD200F6D4F7 /* TWFilecoinProto.h */,
+				4B9BA5DF24B1CFD200F6D4F7 /* TWEthereumAbiEncoder.h */,
+				4B9BA5E024B1CFD200F6D4F7 /* TWElrondProto.h */,
+				4B9BA5E124B1CFD200F6D4F7 /* TWNimiqProto.h */,
+				4B9BA5E224B1CFD200F6D4F7 /* TWBase58.h */,
+				4B9BA5E324B1CFD200F6D4F7 /* TWHDVersion.h */,
+				4B9BA5E424B1CFD200F6D4F7 /* TWSS58AddressType.h */,
+				4B9BA5E524B1CFD200F6D4F7 /* TWRippleXAddress.h */,
+				4B9BA5E624B1CFD200F6D4F7 /* TWIoTeXProto.h */,
+				4B9BA5E724B1CFD200F6D4F7 /* TWFIOProto.h */,
+				4B9BA5E824B1CFD200F6D4F7 /* TWCoinType.h */,
+				4B9BA5E924B1CFD200F6D4F7 /* TWZilliqaProto.h */,
+				4B9BA5EA24B1CFD200F6D4F7 /* TWPublicKey.h */,
+				4B9BA5EB24B1CFD200F6D4F7 /* TWStellarProto.h */,
+				4B9BA5EC24B1CFD200F6D4F7 /* TWTronProto.h */,
+				4B9BA5ED24B1CFD200F6D4F7 /* TWIconProto.h */,
+				4B9BA5EE24B1CFD200F6D4F7 /* TWThetaProto.h */,
+				4B9BA5EF24B1CFD200F6D4F7 /* TWTezosProto.h */,
+				4B9BA5F024B1CFD200F6D4F7 /* TWAlgorandProto.h */,
+				4B9BA5F124B1CFD200F6D4F7 /* TWCosmosProto.h */,
+				4B9BA5F224B1CFD200F6D4F7 /* TWNEARProto.h */,
+				4B9BA5F324B1CFD200F6D4F7 /* TWRippleProto.h */,
+				4B9BA5F424B1CFD200F6D4F7 /* TWCurve.h */,
+				4B9BA5F524B1CFD200F6D4F7 /* TWAionProto.h */,
+				4B9BA5F624B1CFD200F6D4F7 /* TWStellarPassphrase.h */,
+				4B9BA5F724B1CFD200F6D4F7 /* TWHash.h */,
+				4B9BA5F824B1CFD200F6D4F7 /* TWStoredKey.h */,
+				4B9BA5F924B1CFD200F6D4F7 /* TWPublicKeyType.h */,
+				4B9BA5FA24B1CFD200F6D4F7 /* TWBitcoinScript.h */,
+				4B9BA5FB24B1CFD200F6D4F7 /* TWFIOAccount.h */,
+				4B9BA5FC24B1CFD200F6D4F7 /* TWGroestlcoinAddress.h */,
+				4B9BA5FD24B1CFD200F6D4F7 /* TWPolkadotProto.h */,
+				4B9BA5FE24B1CFD200F6D4F7 /* TWEthereumAbiFunction.h */,
+				4B9BA5FF24B1CFD200F6D4F7 /* TWBinanceProto.h */,
+				4B9BA60024B1CFD200F6D4F7 /* TWBase.h */,
+				4B9BA60124B1CFD200F6D4F7 /* TWStellarVersionByte.h */,
+				4B9BA60224B1CFD200F6D4F7 /* TWSolanaProto.h */,
+				4B9BA60324B1CFD200F6D4F7 /* TWAES.h */,
+				4B9BA60424B1CFD200F6D4F7 /* TWFoundationString.h */,
+				4B9BA60524B1CFD200F6D4F7 /* TWHarmonyProto.h */,
+				4B9BA60624B1CFD200F6D4F7 /* TWAccount.h */,
+				4B9BA60724B1CFD200F6D4F7 /* TWNebulasProto.h */,
+				4B9BA60824B1CFD200F6D4F7 /* TWEthereumChainID.h */,
+				4B9BA60924B1CFD200F6D4F7 /* TWString.h */,
+				4B9BA60A24B1CFD200F6D4F7 /* TWWavesProto.h */,
+				4B9BA60B24B1CFD200F6D4F7 /* TWFoundationData.h */,
+				4B9BA60C24B1CFD200F6D4F7 /* TWBlockchain.h */,
+			);
+			path = TrustWalletCore;
+			sourceTree = "<group>";
+		};
+		7E7DD2BF5C7665B53FE0743A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F55E09340888BC707B32E6F /* Pods-walletOffline.debug.xcconfig */,
+				89A7D0011F6DE80E8B850C20 /* Pods-walletOffline.release.xcconfig */,
+				F28AA53EFD580760B06B3F32 /* Pods-walletOffline-tvOS.debug.xcconfig */,
+				93324C480CBF6C41AB748B76 /* Pods-walletOffline-tvOS.release.xcconfig */,
+				BA2D2C7A2849D0D77CF1BF3E /* Pods-walletOffline-tvOSTests.debug.xcconfig */,
+				7F6D25BE2A677FC6B86050C8 /* Pods-walletOffline-tvOSTests.release.xcconfig */,
+				F35ED15D58176D4AC8CFF81A /* Pods-walletOffline-walletOfflineTests.debug.xcconfig */,
+				D26593237C484011A0C32B45 /* Pods-walletOffline-walletOfflineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* walletOffline */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* walletOfflineTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				7E7DD2BF5C7665B53FE0743A /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* walletOffline.app */,
+				00E356EE1AD99517003FC87E /* walletOfflineTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* walletOffline-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* walletOffline-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* walletOfflineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "walletOfflineTests" */;
+			buildPhases = (
+				C53FBCF6BCC2DD3ED3085E78 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = walletOfflineTests;
+			productName = walletOfflineTests;
+			productReference = 00E356EE1AD99517003FC87E /* walletOfflineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* walletOffline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "walletOffline" */;
+			buildPhases = (
+				8D1A599EF108C698243FCD0F /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walletOffline;
+			productName = walletOffline;
+			productReference = 13B07F961A680F5B00A75B9A /* walletOffline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* walletOffline-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "walletOffline-tvOS" */;
+			buildPhases = (
+				66BDDB78C8AD5C4A8F211B5E /* [CP] Check Pods Manifest.lock */,
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "walletOffline-tvOS";
+			productName = "walletOffline-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* walletOffline-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* walletOffline-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "walletOffline-tvOSTests" */;
+			buildPhases = (
+				861DF64EEC1B9A368B775BF3 /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "walletOffline-tvOSTests";
+			productName = "walletOffline-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* walletOffline-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "walletOffline" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* walletOffline */,
+				00E356ED1AD99517003FC87E /* walletOfflineTests */,
+				2D02E47A1E0B4A5D006451C7 /* walletOffline-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* walletOffline-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		66BDDB78C8AD5C4A8F211B5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walletOffline-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		861DF64EEC1B9A368B775BF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walletOffline-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1A599EF108C698243FCD0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walletOffline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C53FBCF6BCC2DD3ED3085E78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walletOffline-walletOfflineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* walletOfflineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				4B9BA61024B1CFD200F6D4F7 /* CreateWallet.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* walletOfflineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* walletOffline */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* walletOffline-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = walletOffline;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35ED15D58176D4AC8CFF81A /* Pods-walletOffline-walletOfflineTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = walletOfflineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walletOffline.app/walletOffline";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26593237C484011A0C32B45 /* Pods-walletOffline-walletOfflineTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = walletOfflineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walletOffline.app/walletOffline";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F55E09340888BC707B32E6F /* Pods-walletOffline.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = walletOffline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = walletOffline;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A7D0011F6DE80E8B850C20 /* Pods-walletOffline.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = walletOffline/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = walletOffline;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28AA53EFD580760B06B3F32 /* Pods-walletOffline-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "walletOffline-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.walletOffline-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93324C480CBF6C41AB748B76 /* Pods-walletOffline-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "walletOffline-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.walletOffline-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2D2C7A2849D0D77CF1BF3E /* Pods-walletOffline-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "walletOffline-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.walletOffline-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walletOffline-tvOS.app/walletOffline-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F6D25BE2A677FC6B86050C8 /* Pods-walletOffline-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "walletOffline-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.walletOffline-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walletOffline-tvOS.app/walletOffline-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "walletOfflineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "walletOffline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "walletOffline-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "walletOffline-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "walletOffline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
