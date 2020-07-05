@@ -7,6 +7,7 @@
 #pragma once
 
 #include "TWData.h"
+#import <UIKit/UIKit.h>
 
 /// Converts a NSData object to TWData, caller must delete it after use.
 TWData *_Nonnull TWDataCreateWithNSData(NSData *_Nonnull data);

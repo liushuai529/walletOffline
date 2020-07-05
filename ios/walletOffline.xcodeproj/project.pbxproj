@@ -21,6 +21,123 @@
 		4B9BA60E24B1CFD200F6D4F7 /* libTrezorCrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C124B1CFD200F6D4F7 /* libTrezorCrypto.a */; };
 		4B9BA60F24B1CFD200F6D4F7 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C224B1CFD200F6D4F7 /* libprotobuf.a */; };
 		4B9BA61024B1CFD200F6D4F7 /* CreateWallet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA5C524B1CFD200F6D4F7 /* CreateWallet.mm */; };
+		4B9BA78224B2014800F6D4F7 /* TWFoundationString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78024B2014800F6D4F7 /* TWFoundationString.m */; };
+		4B9BA78324B2014800F6D4F7 /* TWFoundationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78124B2014800F6D4F7 /* TWFoundationData.m */; };
+		4B9BA80124B20A8700F6D4F7 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78624B20A8700F6D4F7 /* AES.swift */; };
+		4B9BA80224B20A8700F6D4F7 /* CoinTypeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78724B20A8700F6D4F7 /* CoinTypeConfiguration.swift */; };
+		4B9BA80324B20A8700F6D4F7 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78824B20A8700F6D4F7 /* Hash.swift */; };
+		4B9BA80424B20A8700F6D4F7 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78924B20A8700F6D4F7 /* PublicKey.swift */; };
+		4B9BA80524B20A8700F6D4F7 /* FIOAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78A24B20A8700F6D4F7 /* FIOAccount.swift */; };
+		4B9BA80624B20A8700F6D4F7 /* EthereumAbiValueEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78B24B20A8700F6D4F7 /* EthereumAbiValueEncoder.swift */; };
+		4B9BA80724B20A8700F6D4F7 /* RippleXAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78C24B20A8700F6D4F7 /* RippleXAddress.swift */; };
+		4B9BA80824B20A8700F6D4F7 /* BitcoinScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78E24B20A8700F6D4F7 /* BitcoinScript.swift */; };
+		4B9BA80924B20A8700F6D4F7 /* AnyAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA78F24B20A8700F6D4F7 /* AnyAddress.swift */; };
+		4B9BA80A24B20A8700F6D4F7 /* SegwitAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79024B20A8700F6D4F7 /* SegwitAddress.swift */; };
+		4B9BA80B24B20A8700F6D4F7 /* Purpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79224B20A8700F6D4F7 /* Purpose.swift */; };
+		4B9BA80C24B20A8700F6D4F7 /* Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79324B20A8700F6D4F7 /* Curve.swift */; };
+		4B9BA80D24B20A8700F6D4F7 /* EthereumChainID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79424B20A8700F6D4F7 /* EthereumChainID.swift */; };
+		4B9BA80E24B20A8700F6D4F7 /* StellarMemoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79524B20A8700F6D4F7 /* StellarMemoType.swift */; };
+		4B9BA80F24B20A8700F6D4F7 /* HDVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79624B20A8700F6D4F7 /* HDVersion.swift */; };
+		4B9BA81024B20A8700F6D4F7 /* BitcoinSigHashType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79724B20A8700F6D4F7 /* BitcoinSigHashType.swift */; };
+		4B9BA81124B20A8700F6D4F7 /* StellarPassphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79824B20A8700F6D4F7 /* StellarPassphrase.swift */; };
+		4B9BA81224B20A8700F6D4F7 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79924B20A8700F6D4F7 /* Blockchain.swift */; };
+		4B9BA81324B20A8700F6D4F7 /* SS58AddressType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79A24B20A8700F6D4F7 /* SS58AddressType.swift */; };
+		4B9BA81424B20A8700F6D4F7 /* PublicKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79B24B20A8700F6D4F7 /* PublicKeyType.swift */; };
+		4B9BA81524B20A8700F6D4F7 /* CoinType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79C24B20A8700F6D4F7 /* CoinType.swift */; };
+		4B9BA81624B20A8700F6D4F7 /* StellarVersionByte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79D24B20A8700F6D4F7 /* StellarVersionByte.swift */; };
+		4B9BA81724B20A8700F6D4F7 /* HRP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79E24B20A8700F6D4F7 /* HRP.swift */; };
+		4B9BA81824B20A8700F6D4F7 /* HDVersion+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA79F24B20A8700F6D4F7 /* HDVersion+Extension.swift */; };
+		4B9BA81924B20A8700F6D4F7 /* EthereumAbiEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A024B20A8700F6D4F7 /* EthereumAbiEncoder.swift */; };
+		4B9BA81A24B20A8700F6D4F7 /* EthereumAbiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A124B20A8700F6D4F7 /* EthereumAbiFunction.swift */; };
+		4B9BA81B24B20A8700F6D4F7 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A224B20A8700F6D4F7 /* PrivateKey.swift */; };
+		4B9BA81C24B20A8700F6D4F7 /* BitcoinAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A324B20A8700F6D4F7 /* BitcoinAddress.swift */; };
+		4B9BA81D24B20A8700F6D4F7 /* StoredKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A424B20A8700F6D4F7 /* StoredKey.swift */; };
+		4B9BA81E24B20A8700F6D4F7 /* GroestlcoinAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A524B20A8700F6D4F7 /* GroestlcoinAddress.swift */; };
+		4B9BA81F24B20A8700F6D4F7 /* HDWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A624B20A8700F6D4F7 /* HDWallet.swift */; };
+		4B9BA82024B20A8700F6D4F7 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A724B20A8700F6D4F7 /* Account.swift */; };
+		4B9BA82124B20A8700F6D4F7 /* CoinType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A824B20A8700F6D4F7 /* CoinType+Extension.swift */; };
+		4B9BA82224B20A8700F6D4F7 /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7A924B20A8700F6D4F7 /* Base58.swift */; };
+		4B9BA82324B20A8700F6D4F7 /* FIO+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7AB24B20A8700F6D4F7 /* FIO+Proto.swift */; };
+		4B9BA82424B20A8700F6D4F7 /* Bitcoin+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7AC24B20A8700F6D4F7 /* Bitcoin+Proto.swift */; };
+		4B9BA82524B20A8700F6D4F7 /* Filecoin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7AD24B20A8700F6D4F7 /* Filecoin.pb.swift */; };
+		4B9BA82624B20A8700F6D4F7 /* NEAR+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7AE24B20A8700F6D4F7 /* NEAR+Proto.swift */; };
+		4B9BA82724B20A8700F6D4F7 /* EOS.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7AF24B20A8700F6D4F7 /* EOS.pb.swift */; };
+		4B9BA82824B20A8700F6D4F7 /* Cosmos.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B024B20A8700F6D4F7 /* Cosmos.pb.swift */; };
+		4B9BA82924B20A8700F6D4F7 /* Icon+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B124B20A8700F6D4F7 /* Icon+Proto.swift */; };
+		4B9BA82A24B20A8700F6D4F7 /* Waves+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B224B20A8700F6D4F7 /* Waves+Proto.swift */; };
+		4B9BA82B24B20A8700F6D4F7 /* Decred+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B324B20A8700F6D4F7 /* Decred+Proto.swift */; };
+		4B9BA82C24B20A8700F6D4F7 /* NEO.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B424B20A8700F6D4F7 /* NEO.pb.swift */; };
+		4B9BA82D24B20A8700F6D4F7 /* Zilliqa+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B524B20A8700F6D4F7 /* Zilliqa+Proto.swift */; };
+		4B9BA82E24B20A8700F6D4F7 /* Binance+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B624B20A8700F6D4F7 /* Binance+Proto.swift */; };
+		4B9BA82F24B20A8700F6D4F7 /* NULS+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B724B20A8700F6D4F7 /* NULS+Proto.swift */; };
+		4B9BA83024B20A8700F6D4F7 /* Nimiq.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B824B20A8700F6D4F7 /* Nimiq.pb.swift */; };
+		4B9BA83124B20A8700F6D4F7 /* Bitcoin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7B924B20A8700F6D4F7 /* Bitcoin.pb.swift */; };
+		4B9BA83224B20A8700F6D4F7 /* Elrond.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7BA24B20A8700F6D4F7 /* Elrond.pb.swift */; };
+		4B9BA83324B20A8700F6D4F7 /* Cosmos+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7BB24B20A8700F6D4F7 /* Cosmos+Proto.swift */; };
+		4B9BA83424B20A8700F6D4F7 /* NULS.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7BC24B20A8700F6D4F7 /* NULS.pb.swift */; };
+		4B9BA83524B20A8700F6D4F7 /* Tezos+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7BD24B20A8700F6D4F7 /* Tezos+Proto.swift */; };
+		4B9BA83624B20A8700F6D4F7 /* Aeternity.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7BE24B20A8700F6D4F7 /* Aeternity.pb.swift */; };
+		4B9BA83724B20A8700F6D4F7 /* Tron.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7BF24B20A8700F6D4F7 /* Tron.pb.swift */; };
+		4B9BA83824B20A8700F6D4F7 /* Ripple+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C024B20A8700F6D4F7 /* Ripple+Proto.swift */; };
+		4B9BA83924B20A8700F6D4F7 /* Theta.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C124B20A8700F6D4F7 /* Theta.pb.swift */; };
+		4B9BA83A24B20A8700F6D4F7 /* Ontology+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C224B20A8700F6D4F7 /* Ontology+Proto.swift */; };
+		4B9BA83B24B20A8700F6D4F7 /* Nano+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C324B20A8700F6D4F7 /* Nano+Proto.swift */; };
+		4B9BA83C24B20A8700F6D4F7 /* Decred.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C424B20A8700F6D4F7 /* Decred.pb.swift */; };
+		4B9BA83D24B20A8700F6D4F7 /* Solana.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C524B20A8700F6D4F7 /* Solana.pb.swift */; };
+		4B9BA83E24B20A8700F6D4F7 /* Elrond+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C624B20A8700F6D4F7 /* Elrond+Proto.swift */; };
+		4B9BA83F24B20A8700F6D4F7 /* Nimiq+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C724B20A8700F6D4F7 /* Nimiq+Proto.swift */; };
+		4B9BA84024B20A8700F6D4F7 /* Algorand+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C824B20A8700F6D4F7 /* Algorand+Proto.swift */; };
+		4B9BA84124B20A8700F6D4F7 /* FIO.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7C924B20A8700F6D4F7 /* FIO.pb.swift */; };
+		4B9BA84224B20A8700F6D4F7 /* Nebulas+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7CA24B20A8700F6D4F7 /* Nebulas+Proto.swift */; };
+		4B9BA84324B20A8700F6D4F7 /* Stellar+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7CB24B20A8700F6D4F7 /* Stellar+Proto.swift */; };
+		4B9BA84424B20A8700F6D4F7 /* Nano.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7CC24B20A8700F6D4F7 /* Nano.pb.swift */; };
+		4B9BA84524B20A8700F6D4F7 /* Waves.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7CD24B20A8700F6D4F7 /* Waves.pb.swift */; };
+		4B9BA84624B20A8700F6D4F7 /* Aion.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7CE24B20A8700F6D4F7 /* Aion.pb.swift */; };
+		4B9BA84724B20A8700F6D4F7 /* EOS+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7CF24B20A8700F6D4F7 /* EOS+Proto.swift */; };
+		4B9BA84824B20A8700F6D4F7 /* Stellar.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D024B20A8700F6D4F7 /* Stellar.pb.swift */; };
+		4B9BA84924B20A8700F6D4F7 /* Aion+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D124B20A8700F6D4F7 /* Aion+Proto.swift */; };
+		4B9BA84A24B20A8700F6D4F7 /* Ontology.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D224B20A8700F6D4F7 /* Ontology.pb.swift */; };
+		4B9BA84B24B20A8700F6D4F7 /* Theta+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D324B20A8700F6D4F7 /* Theta+Proto.swift */; };
+		4B9BA84C24B20A8700F6D4F7 /* Harmony+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D424B20A8700F6D4F7 /* Harmony+Proto.swift */; };
+		4B9BA84D24B20A8700F6D4F7 /* Ethereum+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D524B20A8700F6D4F7 /* Ethereum+Proto.swift */; };
+		4B9BA84E24B20A8700F6D4F7 /* VeChain+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D624B20A8700F6D4F7 /* VeChain+Proto.swift */; };
+		4B9BA84F24B20A8700F6D4F7 /* Icon.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D724B20A8700F6D4F7 /* Icon.pb.swift */; };
+		4B9BA85024B20A8700F6D4F7 /* Filecoin+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D824B20A8700F6D4F7 /* Filecoin+Proto.swift */; };
+		4B9BA85124B20A8700F6D4F7 /* Aeternity+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7D924B20A8700F6D4F7 /* Aeternity+Proto.swift */; };
+		4B9BA85224B20A8700F6D4F7 /* Solana+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7DA24B20A8700F6D4F7 /* Solana+Proto.swift */; };
+		4B9BA85324B20A8700F6D4F7 /* IoTeX+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7DB24B20A8700F6D4F7 /* IoTeX+Proto.swift */; };
+		4B9BA85424B20A8700F6D4F7 /* Polkadot+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7DC24B20A8700F6D4F7 /* Polkadot+Proto.swift */; };
+		4B9BA85524B20A8700F6D4F7 /* Zilliqa.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7DD24B20A8700F6D4F7 /* Zilliqa.pb.swift */; };
+		4B9BA85624B20A8700F6D4F7 /* Tron+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7DE24B20A8700F6D4F7 /* Tron+Proto.swift */; };
+		4B9BA85724B20A8700F6D4F7 /* Harmony.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7DF24B20A8700F6D4F7 /* Harmony.pb.swift */; };
+		4B9BA85824B20A8700F6D4F7 /* Algorand.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E024B20A8700F6D4F7 /* Algorand.pb.swift */; };
+		4B9BA85924B20A8700F6D4F7 /* VeChain.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E124B20A8700F6D4F7 /* VeChain.pb.swift */; };
+		4B9BA85A24B20A8700F6D4F7 /* Binance.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E224B20A8700F6D4F7 /* Binance.pb.swift */; };
+		4B9BA85B24B20A8700F6D4F7 /* NEAR.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E324B20A8700F6D4F7 /* NEAR.pb.swift */; };
+		4B9BA85C24B20A8700F6D4F7 /* IoTeX.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E424B20A8700F6D4F7 /* IoTeX.pb.swift */; };
+		4B9BA85D24B20A8700F6D4F7 /* Polkadot.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E524B20A8700F6D4F7 /* Polkadot.pb.swift */; };
+		4B9BA85E24B20A8700F6D4F7 /* Ripple.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E624B20A8700F6D4F7 /* Ripple.pb.swift */; };
+		4B9BA85F24B20A8700F6D4F7 /* Tezos.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E724B20A8700F6D4F7 /* Tezos.pb.swift */; };
+		4B9BA86024B20A8700F6D4F7 /* NEO+Proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E824B20A8700F6D4F7 /* NEO+Proto.swift */; };
+		4B9BA86124B20A8700F6D4F7 /* Ethereum.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7E924B20A8700F6D4F7 /* Ethereum.pb.swift */; };
+		4B9BA86224B20A8700F6D4F7 /* Nebulas.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7EA24B20A8700F6D4F7 /* Nebulas.pb.swift */; };
+		4B9BA86324B20A8700F6D4F7 /* BitcoinSigHashType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7EB24B20A8700F6D4F7 /* BitcoinSigHashType+Extension.swift */; };
+		4B9BA86424B20A8700F6D4F7 /* SecRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7EC24B20A8700F6D4F7 /* SecRandom.m */; };
+		4B9BA86524B20A8700F6D4F7 /* DerivationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7ED24B20A8700F6D4F7 /* DerivationPath.swift */; };
+		4B9BA86624B20A8700F6D4F7 /* DerivationPath.Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7EE24B20A8700F6D4F7 /* DerivationPath.Index.swift */; };
+		4B9BA86724B20A8700F6D4F7 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7EF24B20A8700F6D4F7 /* KeyStore.swift */; };
+		4B9BA86924B20A8700F6D4F7 /* AnySigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7F124B20A8700F6D4F7 /* AnySigner.swift */; };
+		4B9BA86B24B20A8700F6D4F7 /* AddressProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7F424B20A8700F6D4F7 /* AddressProtocol.swift */; };
+		4B9BA86C24B20A8700F6D4F7 /* BitcoinAddress+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7F524B20A8700F6D4F7 /* BitcoinAddress+Extension.swift */; };
+		4B9BA86D24B20A8700F6D4F7 /* Data+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7F624B20A8700F6D4F7 /* Data+Hex.swift */; };
+		4B9BA86E24B20A8700F6D4F7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7F724B20A8700F6D4F7 /* Data.swift */; };
+		4B9BA86F24B20A8700F6D4F7 /* CoinType+Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7F824B20A8700F6D4F7 /* CoinType+Address.swift */; };
+		4B9BA87024B20A8700F6D4F7 /* HDWallet+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7F924B20A8700F6D4F7 /* HDWallet+Extension.swift */; };
+		4B9BA87124B20A8700F6D4F7 /* PublicKey+Bitcoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FA24B20A8700F6D4F7 /* PublicKey+Bitcoin.swift */; };
+		4B9BA87224B20A8700F6D4F7 /* KeyStore.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FB24B20A8700F6D4F7 /* KeyStore.Error.swift */; };
+		4B9BA87324B20A8700F6D4F7 /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FC24B20A8700F6D4F7 /* Dummy.cpp */; };
+		4B9BA87424B20A8700F6D4F7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FE24B20A8700F6D4F7 /* Wallet.swift */; };
+		4B9BA87524B20A8700F6D4F7 /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FF24B20A8700F6D4F7 /* Watch.swift */; };
 		651EBF07BC6DEB7131EA99AF /* libPods-walletOffline-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35235DB7BB3D990DF7D8626A /* libPods-walletOffline-tvOSTests.a */; };
 		7A69AC5A281C220BB7BDF3C3 /* libPods-walletOffline-walletOfflineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD016DE6DF88AA0065C71263 /* libPods-walletOffline-walletOfflineTests.a */; };
 		CC9886CF99AF259E07189F52 /* libPods-walletOffline-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D009262381B07929ADF86C /* libPods-walletOffline-tvOS.a */; };
@@ -135,6 +252,125 @@
 		4B9BA60A24B1CFD200F6D4F7 /* TWWavesProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWWavesProto.h; sourceTree = "<group>"; };
 		4B9BA60B24B1CFD200F6D4F7 /* TWFoundationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFoundationData.h; sourceTree = "<group>"; };
 		4B9BA60C24B1CFD200F6D4F7 /* TWBlockchain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBlockchain.h; sourceTree = "<group>"; };
+		4B9BA77624B1DCB700F6D4F7 /* walletOffline-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "walletOffline-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B9BA78024B2014800F6D4F7 /* TWFoundationString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFoundationString.m; sourceTree = "<group>"; };
+		4B9BA78124B2014800F6D4F7 /* TWFoundationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFoundationData.m; sourceTree = "<group>"; };
+		4B9BA78624B20A8700F6D4F7 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		4B9BA78724B20A8700F6D4F7 /* CoinTypeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinTypeConfiguration.swift; sourceTree = "<group>"; };
+		4B9BA78824B20A8700F6D4F7 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		4B9BA78924B20A8700F6D4F7 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		4B9BA78A24B20A8700F6D4F7 /* FIOAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIOAccount.swift; sourceTree = "<group>"; };
+		4B9BA78B24B20A8700F6D4F7 /* EthereumAbiValueEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumAbiValueEncoder.swift; sourceTree = "<group>"; };
+		4B9BA78C24B20A8700F6D4F7 /* RippleXAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleXAddress.swift; sourceTree = "<group>"; };
+		4B9BA78D24B20A8700F6D4F7 /* TrustWalletCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrustWalletCore.h; sourceTree = "<group>"; };
+		4B9BA78E24B20A8700F6D4F7 /* BitcoinScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinScript.swift; sourceTree = "<group>"; };
+		4B9BA78F24B20A8700F6D4F7 /* AnyAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyAddress.swift; sourceTree = "<group>"; };
+		4B9BA79024B20A8700F6D4F7 /* SegwitAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegwitAddress.swift; sourceTree = "<group>"; };
+		4B9BA79224B20A8700F6D4F7 /* Purpose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purpose.swift; sourceTree = "<group>"; };
+		4B9BA79324B20A8700F6D4F7 /* Curve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curve.swift; sourceTree = "<group>"; };
+		4B9BA79424B20A8700F6D4F7 /* EthereumChainID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumChainID.swift; sourceTree = "<group>"; };
+		4B9BA79524B20A8700F6D4F7 /* StellarMemoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarMemoType.swift; sourceTree = "<group>"; };
+		4B9BA79624B20A8700F6D4F7 /* HDVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDVersion.swift; sourceTree = "<group>"; };
+		4B9BA79724B20A8700F6D4F7 /* BitcoinSigHashType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinSigHashType.swift; sourceTree = "<group>"; };
+		4B9BA79824B20A8700F6D4F7 /* StellarPassphrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarPassphrase.swift; sourceTree = "<group>"; };
+		4B9BA79924B20A8700F6D4F7 /* Blockchain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
+		4B9BA79A24B20A8700F6D4F7 /* SS58AddressType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SS58AddressType.swift; sourceTree = "<group>"; };
+		4B9BA79B24B20A8700F6D4F7 /* PublicKeyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKeyType.swift; sourceTree = "<group>"; };
+		4B9BA79C24B20A8700F6D4F7 /* CoinType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinType.swift; sourceTree = "<group>"; };
+		4B9BA79D24B20A8700F6D4F7 /* StellarVersionByte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarVersionByte.swift; sourceTree = "<group>"; };
+		4B9BA79E24B20A8700F6D4F7 /* HRP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRP.swift; sourceTree = "<group>"; };
+		4B9BA79F24B20A8700F6D4F7 /* HDVersion+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HDVersion+Extension.swift"; sourceTree = "<group>"; };
+		4B9BA7A024B20A8700F6D4F7 /* EthereumAbiEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumAbiEncoder.swift; sourceTree = "<group>"; };
+		4B9BA7A124B20A8700F6D4F7 /* EthereumAbiFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumAbiFunction.swift; sourceTree = "<group>"; };
+		4B9BA7A224B20A8700F6D4F7 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		4B9BA7A324B20A8700F6D4F7 /* BitcoinAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinAddress.swift; sourceTree = "<group>"; };
+		4B9BA7A424B20A8700F6D4F7 /* StoredKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredKey.swift; sourceTree = "<group>"; };
+		4B9BA7A524B20A8700F6D4F7 /* GroestlcoinAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroestlcoinAddress.swift; sourceTree = "<group>"; };
+		4B9BA7A624B20A8700F6D4F7 /* HDWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDWallet.swift; sourceTree = "<group>"; };
+		4B9BA7A724B20A8700F6D4F7 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		4B9BA7A824B20A8700F6D4F7 /* CoinType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoinType+Extension.swift"; sourceTree = "<group>"; };
+		4B9BA7A924B20A8700F6D4F7 /* Base58.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
+		4B9BA7AB24B20A8700F6D4F7 /* FIO+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FIO+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7AC24B20A8700F6D4F7 /* Bitcoin+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bitcoin+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7AD24B20A8700F6D4F7 /* Filecoin.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filecoin.pb.swift; sourceTree = "<group>"; };
+		4B9BA7AE24B20A8700F6D4F7 /* NEAR+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NEAR+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7AF24B20A8700F6D4F7 /* EOS.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EOS.pb.swift; sourceTree = "<group>"; };
+		4B9BA7B024B20A8700F6D4F7 /* Cosmos.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cosmos.pb.swift; sourceTree = "<group>"; };
+		4B9BA7B124B20A8700F6D4F7 /* Icon+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Icon+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7B224B20A8700F6D4F7 /* Waves+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Waves+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7B324B20A8700F6D4F7 /* Decred+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decred+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7B424B20A8700F6D4F7 /* NEO.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEO.pb.swift; sourceTree = "<group>"; };
+		4B9BA7B524B20A8700F6D4F7 /* Zilliqa+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Zilliqa+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7B624B20A8700F6D4F7 /* Binance+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Binance+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7B724B20A8700F6D4F7 /* NULS+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NULS+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7B824B20A8700F6D4F7 /* Nimiq.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nimiq.pb.swift; sourceTree = "<group>"; };
+		4B9BA7B924B20A8700F6D4F7 /* Bitcoin.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitcoin.pb.swift; sourceTree = "<group>"; };
+		4B9BA7BA24B20A8700F6D4F7 /* Elrond.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elrond.pb.swift; sourceTree = "<group>"; };
+		4B9BA7BB24B20A8700F6D4F7 /* Cosmos+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cosmos+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7BC24B20A8700F6D4F7 /* NULS.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NULS.pb.swift; sourceTree = "<group>"; };
+		4B9BA7BD24B20A8700F6D4F7 /* Tezos+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tezos+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7BE24B20A8700F6D4F7 /* Aeternity.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aeternity.pb.swift; sourceTree = "<group>"; };
+		4B9BA7BF24B20A8700F6D4F7 /* Tron.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tron.pb.swift; sourceTree = "<group>"; };
+		4B9BA7C024B20A8700F6D4F7 /* Ripple+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ripple+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7C124B20A8700F6D4F7 /* Theta.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theta.pb.swift; sourceTree = "<group>"; };
+		4B9BA7C224B20A8700F6D4F7 /* Ontology+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ontology+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7C324B20A8700F6D4F7 /* Nano+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nano+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7C424B20A8700F6D4F7 /* Decred.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decred.pb.swift; sourceTree = "<group>"; };
+		4B9BA7C524B20A8700F6D4F7 /* Solana.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solana.pb.swift; sourceTree = "<group>"; };
+		4B9BA7C624B20A8700F6D4F7 /* Elrond+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Elrond+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7C724B20A8700F6D4F7 /* Nimiq+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimiq+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7C824B20A8700F6D4F7 /* Algorand+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Algorand+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7C924B20A8700F6D4F7 /* FIO.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIO.pb.swift; sourceTree = "<group>"; };
+		4B9BA7CA24B20A8700F6D4F7 /* Nebulas+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nebulas+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7CB24B20A8700F6D4F7 /* Stellar+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stellar+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7CC24B20A8700F6D4F7 /* Nano.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nano.pb.swift; sourceTree = "<group>"; };
+		4B9BA7CD24B20A8700F6D4F7 /* Waves.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waves.pb.swift; sourceTree = "<group>"; };
+		4B9BA7CE24B20A8700F6D4F7 /* Aion.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aion.pb.swift; sourceTree = "<group>"; };
+		4B9BA7CF24B20A8700F6D4F7 /* EOS+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EOS+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7D024B20A8700F6D4F7 /* Stellar.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stellar.pb.swift; sourceTree = "<group>"; };
+		4B9BA7D124B20A8700F6D4F7 /* Aion+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Aion+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7D224B20A8700F6D4F7 /* Ontology.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ontology.pb.swift; sourceTree = "<group>"; };
+		4B9BA7D324B20A8700F6D4F7 /* Theta+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Theta+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7D424B20A8700F6D4F7 /* Harmony+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Harmony+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7D524B20A8700F6D4F7 /* Ethereum+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ethereum+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7D624B20A8700F6D4F7 /* VeChain+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VeChain+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7D724B20A8700F6D4F7 /* Icon.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.pb.swift; sourceTree = "<group>"; };
+		4B9BA7D824B20A8700F6D4F7 /* Filecoin+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Filecoin+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7D924B20A8700F6D4F7 /* Aeternity+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Aeternity+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7DA24B20A8700F6D4F7 /* Solana+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Solana+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7DB24B20A8700F6D4F7 /* IoTeX+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IoTeX+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7DC24B20A8700F6D4F7 /* Polkadot+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Polkadot+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7DD24B20A8700F6D4F7 /* Zilliqa.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zilliqa.pb.swift; sourceTree = "<group>"; };
+		4B9BA7DE24B20A8700F6D4F7 /* Tron+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tron+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7DF24B20A8700F6D4F7 /* Harmony.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Harmony.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E024B20A8700F6D4F7 /* Algorand.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorand.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E124B20A8700F6D4F7 /* VeChain.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeChain.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E224B20A8700F6D4F7 /* Binance.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binance.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E324B20A8700F6D4F7 /* NEAR.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEAR.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E424B20A8700F6D4F7 /* IoTeX.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IoTeX.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E524B20A8700F6D4F7 /* Polkadot.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polkadot.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E624B20A8700F6D4F7 /* Ripple.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ripple.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E724B20A8700F6D4F7 /* Tezos.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tezos.pb.swift; sourceTree = "<group>"; };
+		4B9BA7E824B20A8700F6D4F7 /* NEO+Proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NEO+Proto.swift"; sourceTree = "<group>"; };
+		4B9BA7E924B20A8700F6D4F7 /* Ethereum.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ethereum.pb.swift; sourceTree = "<group>"; };
+		4B9BA7EA24B20A8700F6D4F7 /* Nebulas.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nebulas.pb.swift; sourceTree = "<group>"; };
+		4B9BA7EB24B20A8700F6D4F7 /* BitcoinSigHashType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BitcoinSigHashType+Extension.swift"; sourceTree = "<group>"; };
+		4B9BA7EC24B20A8700F6D4F7 /* SecRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecRandom.m; sourceTree = "<group>"; };
+		4B9BA7ED24B20A8700F6D4F7 /* DerivationPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DerivationPath.swift; sourceTree = "<group>"; };
+		4B9BA7EE24B20A8700F6D4F7 /* DerivationPath.Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DerivationPath.Index.swift; sourceTree = "<group>"; };
+		4B9BA7EF24B20A8700F6D4F7 /* KeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
+		4B9BA7F124B20A8700F6D4F7 /* AnySigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnySigner.swift; sourceTree = "<group>"; };
+		4B9BA7F424B20A8700F6D4F7 /* AddressProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressProtocol.swift; sourceTree = "<group>"; };
+		4B9BA7F524B20A8700F6D4F7 /* BitcoinAddress+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BitcoinAddress+Extension.swift"; sourceTree = "<group>"; };
+		4B9BA7F624B20A8700F6D4F7 /* Data+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Hex.swift"; sourceTree = "<group>"; };
+		4B9BA7F724B20A8700F6D4F7 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4B9BA7F824B20A8700F6D4F7 /* CoinType+Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoinType+Address.swift"; sourceTree = "<group>"; };
+		4B9BA7F924B20A8700F6D4F7 /* HDWallet+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HDWallet+Extension.swift"; sourceTree = "<group>"; };
+		4B9BA7FA24B20A8700F6D4F7 /* PublicKey+Bitcoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PublicKey+Bitcoin.swift"; sourceTree = "<group>"; };
+		4B9BA7FB24B20A8700F6D4F7 /* KeyStore.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStore.Error.swift; sourceTree = "<group>"; };
+		4B9BA7FC24B20A8700F6D4F7 /* Dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dummy.cpp; sourceTree = "<group>"; };
+		4B9BA7FE24B20A8700F6D4F7 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		4B9BA7FF24B20A8700F6D4F7 /* Watch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
 		7F6D25BE2A677FC6B86050C8 /* Pods-walletOffline-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOSTests/Pods-walletOffline-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		89A7D0011F6DE80E8B850C20 /* Pods-walletOffline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline.release.xcconfig"; path = "Target Support Files/Pods-walletOffline/Pods-walletOffline.release.xcconfig"; sourceTree = "<group>"; };
 		93324C480CBF6C41AB748B76 /* Pods-walletOffline-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOS.release.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOS/Pods-walletOffline-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +451,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				4B9BA77624B1DCB700F6D4F7 /* walletOffline-Bridging-Header.h */,
 			);
 			name = walletOffline;
 			sourceTree = "<group>";
@@ -235,6 +472,7 @@
 		4B9BA5BF24B1CFBF00F6D4F7 /* wallet */ = {
 			isa = PBXGroup;
 			children = (
+				4B9BA78424B20A8700F6D4F7 /* Sources */,
 				4B9BA5C224B1CFD200F6D4F7 /* libprotobuf.a */,
 				4B9BA5C124B1CFD200F6D4F7 /* libTrezorCrypto.a */,
 				4B9BA5C024B1CFD100F6D4F7 /* libTrustWalletCore.a */,
@@ -256,6 +494,8 @@
 		4B9BA5C624B1CFD200F6D4F7 /* TrustWalletCore */ = {
 			isa = PBXGroup;
 			children = (
+				4B9BA78124B2014800F6D4F7 /* TWFoundationData.m */,
+				4B9BA78024B2014800F6D4F7 /* TWFoundationString.m */,
 				4B9BA5C724B1CFD200F6D4F7 /* TWPurpose.h */,
 				4B9BA5C824B1CFD200F6D4F7 /* TWNanoProto.h */,
 				4B9BA5C924B1CFD200F6D4F7 /* TWCoinTypeConfiguration.h */,
@@ -328,6 +568,161 @@
 				4B9BA60C24B1CFD200F6D4F7 /* TWBlockchain.h */,
 			);
 			path = TrustWalletCore;
+			sourceTree = "<group>";
+		};
+		4B9BA78424B20A8700F6D4F7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA78524B20A8700F6D4F7 /* Generated */,
+				4B9BA7EC24B20A8700F6D4F7 /* SecRandom.m */,
+				4B9BA7ED24B20A8700F6D4F7 /* DerivationPath.swift */,
+				4B9BA7EE24B20A8700F6D4F7 /* DerivationPath.Index.swift */,
+				4B9BA7EF24B20A8700F6D4F7 /* KeyStore.swift */,
+				4B9BA7F124B20A8700F6D4F7 /* AnySigner.swift */,
+				4B9BA7F324B20A8700F6D4F7 /* Extensions */,
+				4B9BA7FB24B20A8700F6D4F7 /* KeyStore.Error.swift */,
+				4B9BA7FC24B20A8700F6D4F7 /* Dummy.cpp */,
+				4B9BA7FE24B20A8700F6D4F7 /* Wallet.swift */,
+				4B9BA7FF24B20A8700F6D4F7 /* Watch.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4B9BA78524B20A8700F6D4F7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA78624B20A8700F6D4F7 /* AES.swift */,
+				4B9BA78724B20A8700F6D4F7 /* CoinTypeConfiguration.swift */,
+				4B9BA78824B20A8700F6D4F7 /* Hash.swift */,
+				4B9BA78924B20A8700F6D4F7 /* PublicKey.swift */,
+				4B9BA78A24B20A8700F6D4F7 /* FIOAccount.swift */,
+				4B9BA78B24B20A8700F6D4F7 /* EthereumAbiValueEncoder.swift */,
+				4B9BA78C24B20A8700F6D4F7 /* RippleXAddress.swift */,
+				4B9BA78D24B20A8700F6D4F7 /* TrustWalletCore.h */,
+				4B9BA78E24B20A8700F6D4F7 /* BitcoinScript.swift */,
+				4B9BA78F24B20A8700F6D4F7 /* AnyAddress.swift */,
+				4B9BA79024B20A8700F6D4F7 /* SegwitAddress.swift */,
+				4B9BA79124B20A8700F6D4F7 /* Enums */,
+				4B9BA79F24B20A8700F6D4F7 /* HDVersion+Extension.swift */,
+				4B9BA7A024B20A8700F6D4F7 /* EthereumAbiEncoder.swift */,
+				4B9BA7A124B20A8700F6D4F7 /* EthereumAbiFunction.swift */,
+				4B9BA7A224B20A8700F6D4F7 /* PrivateKey.swift */,
+				4B9BA7A324B20A8700F6D4F7 /* BitcoinAddress.swift */,
+				4B9BA7A424B20A8700F6D4F7 /* StoredKey.swift */,
+				4B9BA7A524B20A8700F6D4F7 /* GroestlcoinAddress.swift */,
+				4B9BA7A624B20A8700F6D4F7 /* HDWallet.swift */,
+				4B9BA7A724B20A8700F6D4F7 /* Account.swift */,
+				4B9BA7A824B20A8700F6D4F7 /* CoinType+Extension.swift */,
+				4B9BA7A924B20A8700F6D4F7 /* Base58.swift */,
+				4B9BA7AA24B20A8700F6D4F7 /* Protobuf */,
+				4B9BA7EB24B20A8700F6D4F7 /* BitcoinSigHashType+Extension.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		4B9BA79124B20A8700F6D4F7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA79224B20A8700F6D4F7 /* Purpose.swift */,
+				4B9BA79324B20A8700F6D4F7 /* Curve.swift */,
+				4B9BA79424B20A8700F6D4F7 /* EthereumChainID.swift */,
+				4B9BA79524B20A8700F6D4F7 /* StellarMemoType.swift */,
+				4B9BA79624B20A8700F6D4F7 /* HDVersion.swift */,
+				4B9BA79724B20A8700F6D4F7 /* BitcoinSigHashType.swift */,
+				4B9BA79824B20A8700F6D4F7 /* StellarPassphrase.swift */,
+				4B9BA79924B20A8700F6D4F7 /* Blockchain.swift */,
+				4B9BA79A24B20A8700F6D4F7 /* SS58AddressType.swift */,
+				4B9BA79B24B20A8700F6D4F7 /* PublicKeyType.swift */,
+				4B9BA79C24B20A8700F6D4F7 /* CoinType.swift */,
+				4B9BA79D24B20A8700F6D4F7 /* StellarVersionByte.swift */,
+				4B9BA79E24B20A8700F6D4F7 /* HRP.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4B9BA7AA24B20A8700F6D4F7 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA7AB24B20A8700F6D4F7 /* FIO+Proto.swift */,
+				4B9BA7AC24B20A8700F6D4F7 /* Bitcoin+Proto.swift */,
+				4B9BA7AD24B20A8700F6D4F7 /* Filecoin.pb.swift */,
+				4B9BA7AE24B20A8700F6D4F7 /* NEAR+Proto.swift */,
+				4B9BA7AF24B20A8700F6D4F7 /* EOS.pb.swift */,
+				4B9BA7B024B20A8700F6D4F7 /* Cosmos.pb.swift */,
+				4B9BA7B124B20A8700F6D4F7 /* Icon+Proto.swift */,
+				4B9BA7B224B20A8700F6D4F7 /* Waves+Proto.swift */,
+				4B9BA7B324B20A8700F6D4F7 /* Decred+Proto.swift */,
+				4B9BA7B424B20A8700F6D4F7 /* NEO.pb.swift */,
+				4B9BA7B524B20A8700F6D4F7 /* Zilliqa+Proto.swift */,
+				4B9BA7B624B20A8700F6D4F7 /* Binance+Proto.swift */,
+				4B9BA7B724B20A8700F6D4F7 /* NULS+Proto.swift */,
+				4B9BA7B824B20A8700F6D4F7 /* Nimiq.pb.swift */,
+				4B9BA7B924B20A8700F6D4F7 /* Bitcoin.pb.swift */,
+				4B9BA7BA24B20A8700F6D4F7 /* Elrond.pb.swift */,
+				4B9BA7BB24B20A8700F6D4F7 /* Cosmos+Proto.swift */,
+				4B9BA7BC24B20A8700F6D4F7 /* NULS.pb.swift */,
+				4B9BA7BD24B20A8700F6D4F7 /* Tezos+Proto.swift */,
+				4B9BA7BE24B20A8700F6D4F7 /* Aeternity.pb.swift */,
+				4B9BA7BF24B20A8700F6D4F7 /* Tron.pb.swift */,
+				4B9BA7C024B20A8700F6D4F7 /* Ripple+Proto.swift */,
+				4B9BA7C124B20A8700F6D4F7 /* Theta.pb.swift */,
+				4B9BA7C224B20A8700F6D4F7 /* Ontology+Proto.swift */,
+				4B9BA7C324B20A8700F6D4F7 /* Nano+Proto.swift */,
+				4B9BA7C424B20A8700F6D4F7 /* Decred.pb.swift */,
+				4B9BA7C524B20A8700F6D4F7 /* Solana.pb.swift */,
+				4B9BA7C624B20A8700F6D4F7 /* Elrond+Proto.swift */,
+				4B9BA7C724B20A8700F6D4F7 /* Nimiq+Proto.swift */,
+				4B9BA7C824B20A8700F6D4F7 /* Algorand+Proto.swift */,
+				4B9BA7C924B20A8700F6D4F7 /* FIO.pb.swift */,
+				4B9BA7CA24B20A8700F6D4F7 /* Nebulas+Proto.swift */,
+				4B9BA7CB24B20A8700F6D4F7 /* Stellar+Proto.swift */,
+				4B9BA7CC24B20A8700F6D4F7 /* Nano.pb.swift */,
+				4B9BA7CD24B20A8700F6D4F7 /* Waves.pb.swift */,
+				4B9BA7CE24B20A8700F6D4F7 /* Aion.pb.swift */,
+				4B9BA7CF24B20A8700F6D4F7 /* EOS+Proto.swift */,
+				4B9BA7D024B20A8700F6D4F7 /* Stellar.pb.swift */,
+				4B9BA7D124B20A8700F6D4F7 /* Aion+Proto.swift */,
+				4B9BA7D224B20A8700F6D4F7 /* Ontology.pb.swift */,
+				4B9BA7D324B20A8700F6D4F7 /* Theta+Proto.swift */,
+				4B9BA7D424B20A8700F6D4F7 /* Harmony+Proto.swift */,
+				4B9BA7D524B20A8700F6D4F7 /* Ethereum+Proto.swift */,
+				4B9BA7D624B20A8700F6D4F7 /* VeChain+Proto.swift */,
+				4B9BA7D724B20A8700F6D4F7 /* Icon.pb.swift */,
+				4B9BA7D824B20A8700F6D4F7 /* Filecoin+Proto.swift */,
+				4B9BA7D924B20A8700F6D4F7 /* Aeternity+Proto.swift */,
+				4B9BA7DA24B20A8700F6D4F7 /* Solana+Proto.swift */,
+				4B9BA7DB24B20A8700F6D4F7 /* IoTeX+Proto.swift */,
+				4B9BA7DC24B20A8700F6D4F7 /* Polkadot+Proto.swift */,
+				4B9BA7DD24B20A8700F6D4F7 /* Zilliqa.pb.swift */,
+				4B9BA7DE24B20A8700F6D4F7 /* Tron+Proto.swift */,
+				4B9BA7DF24B20A8700F6D4F7 /* Harmony.pb.swift */,
+				4B9BA7E024B20A8700F6D4F7 /* Algorand.pb.swift */,
+				4B9BA7E124B20A8700F6D4F7 /* VeChain.pb.swift */,
+				4B9BA7E224B20A8700F6D4F7 /* Binance.pb.swift */,
+				4B9BA7E324B20A8700F6D4F7 /* NEAR.pb.swift */,
+				4B9BA7E424B20A8700F6D4F7 /* IoTeX.pb.swift */,
+				4B9BA7E524B20A8700F6D4F7 /* Polkadot.pb.swift */,
+				4B9BA7E624B20A8700F6D4F7 /* Ripple.pb.swift */,
+				4B9BA7E724B20A8700F6D4F7 /* Tezos.pb.swift */,
+				4B9BA7E824B20A8700F6D4F7 /* NEO+Proto.swift */,
+				4B9BA7E924B20A8700F6D4F7 /* Ethereum.pb.swift */,
+				4B9BA7EA24B20A8700F6D4F7 /* Nebulas.pb.swift */,
+			);
+			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		4B9BA7F324B20A8700F6D4F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA7F424B20A8700F6D4F7 /* AddressProtocol.swift */,
+				4B9BA7F524B20A8700F6D4F7 /* BitcoinAddress+Extension.swift */,
+				4B9BA7F624B20A8700F6D4F7 /* Data+Hex.swift */,
+				4B9BA7F724B20A8700F6D4F7 /* Data.swift */,
+				4B9BA7F824B20A8700F6D4F7 /* CoinType+Address.swift */,
+				4B9BA7F924B20A8700F6D4F7 /* HDWallet+Extension.swift */,
+				4B9BA7FA24B20A8700F6D4F7 /* PublicKey+Bitcoin.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7E7DD2BF5C7665B53FE0743A /* Pods */ = {
@@ -472,7 +867,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1150;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -710,9 +1105,126 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9BA86024B20A8700F6D4F7 /* NEO+Proto.swift in Sources */,
+				4B9BA82724B20A8700F6D4F7 /* EOS.pb.swift in Sources */,
+				4B9BA81A24B20A8700F6D4F7 /* EthereumAbiFunction.swift in Sources */,
+				4B9BA81624B20A8700F6D4F7 /* StellarVersionByte.swift in Sources */,
+				4B9BA81524B20A8700F6D4F7 /* CoinType.swift in Sources */,
+				4B9BA86624B20A8700F6D4F7 /* DerivationPath.Index.swift in Sources */,
+				4B9BA80624B20A8700F6D4F7 /* EthereumAbiValueEncoder.swift in Sources */,
+				4B9BA81D24B20A8700F6D4F7 /* StoredKey.swift in Sources */,
+				4B9BA85024B20A8700F6D4F7 /* Filecoin+Proto.swift in Sources */,
+				4B9BA82F24B20A8700F6D4F7 /* NULS+Proto.swift in Sources */,
+				4B9BA83F24B20A8700F6D4F7 /* Nimiq+Proto.swift in Sources */,
+				4B9BA85924B20A8700F6D4F7 /* VeChain.pb.swift in Sources */,
+				4B9BA84424B20A8700F6D4F7 /* Nano.pb.swift in Sources */,
+				4B9BA85624B20A8700F6D4F7 /* Tron+Proto.swift in Sources */,
+				4B9BA81F24B20A8700F6D4F7 /* HDWallet.swift in Sources */,
+				4B9BA85F24B20A8700F6D4F7 /* Tezos.pb.swift in Sources */,
+				4B9BA84B24B20A8700F6D4F7 /* Theta+Proto.swift in Sources */,
+				4B9BA80224B20A8700F6D4F7 /* CoinTypeConfiguration.swift in Sources */,
+				4B9BA83E24B20A8700F6D4F7 /* Elrond+Proto.swift in Sources */,
+				4B9BA86124B20A8700F6D4F7 /* Ethereum.pb.swift in Sources */,
+				4B9BA85C24B20A8700F6D4F7 /* IoTeX.pb.swift in Sources */,
+				4B9BA84624B20A8700F6D4F7 /* Aion.pb.swift in Sources */,
+				4B9BA86324B20A8700F6D4F7 /* BitcoinSigHashType+Extension.swift in Sources */,
+				4B9BA81124B20A8700F6D4F7 /* StellarPassphrase.swift in Sources */,
+				4B9BA83124B20A8700F6D4F7 /* Bitcoin.pb.swift in Sources */,
+				4B9BA81724B20A8700F6D4F7 /* HRP.swift in Sources */,
+				4B9BA81E24B20A8700F6D4F7 /* GroestlcoinAddress.swift in Sources */,
+				4B9BA87124B20A8700F6D4F7 /* PublicKey+Bitcoin.swift in Sources */,
+				4B9BA83324B20A8700F6D4F7 /* Cosmos+Proto.swift in Sources */,
+				4B9BA80D24B20A8700F6D4F7 /* EthereumChainID.swift in Sources */,
+				4B9BA80F24B20A8700F6D4F7 /* HDVersion.swift in Sources */,
+				4B9BA82524B20A8700F6D4F7 /* Filecoin.pb.swift in Sources */,
+				4B9BA81024B20A8700F6D4F7 /* BitcoinSigHashType.swift in Sources */,
+				4B9BA86E24B20A8700F6D4F7 /* Data.swift in Sources */,
+				4B9BA82224B20A8700F6D4F7 /* Base58.swift in Sources */,
+				4B9BA86C24B20A8700F6D4F7 /* BitcoinAddress+Extension.swift in Sources */,
+				4B9BA82E24B20A8700F6D4F7 /* Binance+Proto.swift in Sources */,
+				4B9BA82024B20A8700F6D4F7 /* Account.swift in Sources */,
+				4B9BA86F24B20A8700F6D4F7 /* CoinType+Address.swift in Sources */,
+				4B9BA84F24B20A8700F6D4F7 /* Icon.pb.swift in Sources */,
+				4B9BA84224B20A8700F6D4F7 /* Nebulas+Proto.swift in Sources */,
+				4B9BA80C24B20A8700F6D4F7 /* Curve.swift in Sources */,
+				4B9BA84024B20A8700F6D4F7 /* Algorand+Proto.swift in Sources */,
+				4B9BA86224B20A8700F6D4F7 /* Nebulas.pb.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				4B9BA81224B20A8700F6D4F7 /* Blockchain.swift in Sources */,
+				4B9BA85B24B20A8700F6D4F7 /* NEAR.pb.swift in Sources */,
+				4B9BA80824B20A8700F6D4F7 /* BitcoinScript.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				4B9BA84924B20A8700F6D4F7 /* Aion+Proto.swift in Sources */,
+				4B9BA82B24B20A8700F6D4F7 /* Decred+Proto.swift in Sources */,
+				4B9BA83A24B20A8700F6D4F7 /* Ontology+Proto.swift in Sources */,
+				4B9BA86724B20A8700F6D4F7 /* KeyStore.swift in Sources */,
+				4B9BA82824B20A8700F6D4F7 /* Cosmos.pb.swift in Sources */,
+				4B9BA87324B20A8700F6D4F7 /* Dummy.cpp in Sources */,
+				4B9BA80424B20A8700F6D4F7 /* PublicKey.swift in Sources */,
+				4B9BA81324B20A8700F6D4F7 /* SS58AddressType.swift in Sources */,
+				4B9BA86B24B20A8700F6D4F7 /* AddressProtocol.swift in Sources */,
+				4B9BA83924B20A8700F6D4F7 /* Theta.pb.swift in Sources */,
+				4B9BA82324B20A8700F6D4F7 /* FIO+Proto.swift in Sources */,
+				4B9BA82624B20A8700F6D4F7 /* NEAR+Proto.swift in Sources */,
+				4B9BA85524B20A8700F6D4F7 /* Zilliqa.pb.swift in Sources */,
+				4B9BA82124B20A8700F6D4F7 /* CoinType+Extension.swift in Sources */,
+				4B9BA83D24B20A8700F6D4F7 /* Solana.pb.swift in Sources */,
+				4B9BA82424B20A8700F6D4F7 /* Bitcoin+Proto.swift in Sources */,
+				4B9BA81424B20A8700F6D4F7 /* PublicKeyType.swift in Sources */,
+				4B9BA85824B20A8700F6D4F7 /* Algorand.pb.swift in Sources */,
+				4B9BA85424B20A8700F6D4F7 /* Polkadot+Proto.swift in Sources */,
+				4B9BA84A24B20A8700F6D4F7 /* Ontology.pb.swift in Sources */,
+				4B9BA80A24B20A8700F6D4F7 /* SegwitAddress.swift in Sources */,
+				4B9BA84C24B20A8700F6D4F7 /* Harmony+Proto.swift in Sources */,
+				4B9BA85324B20A8700F6D4F7 /* IoTeX+Proto.swift in Sources */,
+				4B9BA81824B20A8700F6D4F7 /* HDVersion+Extension.swift in Sources */,
+				4B9BA87224B20A8700F6D4F7 /* KeyStore.Error.swift in Sources */,
+				4B9BA84124B20A8700F6D4F7 /* FIO.pb.swift in Sources */,
+				4B9BA83724B20A8700F6D4F7 /* Tron.pb.swift in Sources */,
+				4B9BA84724B20A8700F6D4F7 /* EOS+Proto.swift in Sources */,
+				4B9BA83424B20A8700F6D4F7 /* NULS.pb.swift in Sources */,
+				4B9BA85D24B20A8700F6D4F7 /* Polkadot.pb.swift in Sources */,
+				4B9BA83524B20A8700F6D4F7 /* Tezos+Proto.swift in Sources */,
+				4B9BA84D24B20A8700F6D4F7 /* Ethereum+Proto.swift in Sources */,
+				4B9BA80524B20A8700F6D4F7 /* FIOAccount.swift in Sources */,
+				4B9BA82924B20A8700F6D4F7 /* Icon+Proto.swift in Sources */,
+				4B9BA83224B20A8700F6D4F7 /* Elrond.pb.swift in Sources */,
+				4B9BA86524B20A8700F6D4F7 /* DerivationPath.swift in Sources */,
+				4B9BA80B24B20A8700F6D4F7 /* Purpose.swift in Sources */,
+				4B9BA80E24B20A8700F6D4F7 /* StellarMemoType.swift in Sources */,
+				4B9BA80924B20A8700F6D4F7 /* AnyAddress.swift in Sources */,
+				4B9BA82C24B20A8700F6D4F7 /* NEO.pb.swift in Sources */,
+				4B9BA80324B20A8700F6D4F7 /* Hash.swift in Sources */,
+				4B9BA87524B20A8700F6D4F7 /* Watch.swift in Sources */,
+				4B9BA87024B20A8700F6D4F7 /* HDWallet+Extension.swift in Sources */,
+				4B9BA78324B2014800F6D4F7 /* TWFoundationData.m in Sources */,
+				4B9BA80124B20A8700F6D4F7 /* AES.swift in Sources */,
+				4B9BA80724B20A8700F6D4F7 /* RippleXAddress.swift in Sources */,
+				4B9BA78224B2014800F6D4F7 /* TWFoundationString.m in Sources */,
+				4B9BA81C24B20A8700F6D4F7 /* BitcoinAddress.swift in Sources */,
+				4B9BA86924B20A8700F6D4F7 /* AnySigner.swift in Sources */,
+				4B9BA83C24B20A8700F6D4F7 /* Decred.pb.swift in Sources */,
+				4B9BA86D24B20A8700F6D4F7 /* Data+Hex.swift in Sources */,
+				4B9BA85A24B20A8700F6D4F7 /* Binance.pb.swift in Sources */,
+				4B9BA83024B20A8700F6D4F7 /* Nimiq.pb.swift in Sources */,
+				4B9BA86424B20A8700F6D4F7 /* SecRandom.m in Sources */,
+				4B9BA85724B20A8700F6D4F7 /* Harmony.pb.swift in Sources */,
+				4B9BA83624B20A8700F6D4F7 /* Aeternity.pb.swift in Sources */,
+				4B9BA87424B20A8700F6D4F7 /* Wallet.swift in Sources */,
+				4B9BA85E24B20A8700F6D4F7 /* Ripple.pb.swift in Sources */,
+				4B9BA85124B20A8700F6D4F7 /* Aeternity+Proto.swift in Sources */,
+				4B9BA81924B20A8700F6D4F7 /* EthereumAbiEncoder.swift in Sources */,
+				4B9BA83B24B20A8700F6D4F7 /* Nano+Proto.swift in Sources */,
+				4B9BA85224B20A8700F6D4F7 /* Solana+Proto.swift in Sources */,
 				4B9BA61024B1CFD200F6D4F7 /* CreateWallet.mm in Sources */,
+				4B9BA82A24B20A8700F6D4F7 /* Waves+Proto.swift in Sources */,
+				4B9BA84824B20A8700F6D4F7 /* Stellar.pb.swift in Sources */,
+				4B9BA84524B20A8700F6D4F7 /* Waves.pb.swift in Sources */,
+				4B9BA83824B20A8700F6D4F7 /* Ripple+Proto.swift in Sources */,
+				4B9BA81B24B20A8700F6D4F7 /* PrivateKey.swift in Sources */,
+				4B9BA84E24B20A8700F6D4F7 /* VeChain+Proto.swift in Sources */,
+				4B9BA84324B20A8700F6D4F7 /* Stellar+Proto.swift in Sources */,
+				4B9BA82D24B20A8700F6D4F7 /* Zilliqa+Proto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,6 +1277,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F35ED15D58176D4AC8CFF81A /* Pods-walletOffline-walletOfflineTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -788,6 +1301,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D26593237C484011A0C32B45 /* Pods-walletOffline-walletOfflineTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = walletOfflineTests/Info.plist;
@@ -829,6 +1343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = walletOffline;
+				SWIFT_OBJC_BRIDGING_HEADER = "walletOffline-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -855,6 +1370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = walletOffline;
+				SWIFT_OBJC_BRIDGING_HEADER = "walletOffline-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

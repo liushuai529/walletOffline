@@ -9,6 +9,7 @@
 #include "TWString.h"
 
 
+
 /// Converts a NSString object to TWString, caller must delete it after use.
 const TWString *_Nonnull TWStringCreateWithNSString(NSString *_Nonnull other);
 
