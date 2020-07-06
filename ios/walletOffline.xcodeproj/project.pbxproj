@@ -138,6 +138,9 @@
 		4B9BA87324B20A8700F6D4F7 /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FC24B20A8700F6D4F7 /* Dummy.cpp */; };
 		4B9BA87424B20A8700F6D4F7 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FE24B20A8700F6D4F7 /* Wallet.swift */; };
 		4B9BA87524B20A8700F6D4F7 /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA7FF24B20A8700F6D4F7 /* Watch.swift */; };
+		4B9BA87824B2128600F6D4F7 /* EthereumSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA87724B2128600F6D4F7 /* EthereumSigner.swift */; };
+		4B9BA87B24B2B87C00F6D4F7 /* EthereumSignerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA87A24B2B87C00F6D4F7 /* EthereumSignerBridge.m */; };
+		4B9BA87D24B335E900F6D4F7 /* BitcoinSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BA87C24B335E900F6D4F7 /* BitcoinSigner.swift */; };
 		651EBF07BC6DEB7131EA99AF /* libPods-walletOffline-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35235DB7BB3D990DF7D8626A /* libPods-walletOffline-tvOSTests.a */; };
 		7A69AC5A281C220BB7BDF3C3 /* libPods-walletOffline-walletOfflineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD016DE6DF88AA0065C71263 /* libPods-walletOffline-walletOfflineTests.a */; };
 		CC9886CF99AF259E07189F52 /* libPods-walletOffline-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D009262381B07929ADF86C /* libPods-walletOffline-tvOS.a */; };
@@ -371,6 +374,9 @@
 		4B9BA7FC24B20A8700F6D4F7 /* Dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dummy.cpp; sourceTree = "<group>"; };
 		4B9BA7FE24B20A8700F6D4F7 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		4B9BA7FF24B20A8700F6D4F7 /* Watch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
+		4B9BA87724B2128600F6D4F7 /* EthereumSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumSigner.swift; sourceTree = "<group>"; };
+		4B9BA87A24B2B87C00F6D4F7 /* EthereumSignerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthereumSignerBridge.m; sourceTree = "<group>"; };
+		4B9BA87C24B335E900F6D4F7 /* BitcoinSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinSigner.swift; sourceTree = "<group>"; };
 		7F6D25BE2A677FC6B86050C8 /* Pods-walletOffline-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOSTests/Pods-walletOffline-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		89A7D0011F6DE80E8B850C20 /* Pods-walletOffline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline.release.xcconfig"; path = "Target Support Files/Pods-walletOffline/Pods-walletOffline.release.xcconfig"; sourceTree = "<group>"; };
 		93324C480CBF6C41AB748B76 /* Pods-walletOffline-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walletOffline-tvOS.release.xcconfig"; path = "Target Support Files/Pods-walletOffline-tvOS/Pods-walletOffline-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -573,6 +579,7 @@
 		4B9BA78424B20A8700F6D4F7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4B9BA87624B2127200F6D4F7 /* Signer */,
 				4B9BA78524B20A8700F6D4F7 /* Generated */,
 				4B9BA7EC24B20A8700F6D4F7 /* SecRandom.m */,
 				4B9BA7ED24B20A8700F6D4F7 /* DerivationPath.swift */,
@@ -723,6 +730,16 @@
 				4B9BA7FA24B20A8700F6D4F7 /* PublicKey+Bitcoin.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B9BA87624B2127200F6D4F7 /* Signer */ = {
+			isa = PBXGroup;
+			children = (
+				4B9BA87C24B335E900F6D4F7 /* BitcoinSigner.swift */,
+				4B9BA87724B2128600F6D4F7 /* EthereumSigner.swift */,
+				4B9BA87A24B2B87C00F6D4F7 /* EthereumSignerBridge.m */,
+			);
+			path = Signer;
 			sourceTree = "<group>";
 		};
 		7E7DD2BF5C7665B53FE0743A /* Pods */ = {
@@ -1163,15 +1180,18 @@
 				4B9BA80424B20A8700F6D4F7 /* PublicKey.swift in Sources */,
 				4B9BA81324B20A8700F6D4F7 /* SS58AddressType.swift in Sources */,
 				4B9BA86B24B20A8700F6D4F7 /* AddressProtocol.swift in Sources */,
+				4B9BA87824B2128600F6D4F7 /* EthereumSigner.swift in Sources */,
 				4B9BA83924B20A8700F6D4F7 /* Theta.pb.swift in Sources */,
 				4B9BA82324B20A8700F6D4F7 /* FIO+Proto.swift in Sources */,
 				4B9BA82624B20A8700F6D4F7 /* NEAR+Proto.swift in Sources */,
 				4B9BA85524B20A8700F6D4F7 /* Zilliqa.pb.swift in Sources */,
 				4B9BA82124B20A8700F6D4F7 /* CoinType+Extension.swift in Sources */,
 				4B9BA83D24B20A8700F6D4F7 /* Solana.pb.swift in Sources */,
+				4B9BA87B24B2B87C00F6D4F7 /* EthereumSignerBridge.m in Sources */,
 				4B9BA82424B20A8700F6D4F7 /* Bitcoin+Proto.swift in Sources */,
 				4B9BA81424B20A8700F6D4F7 /* PublicKeyType.swift in Sources */,
 				4B9BA85824B20A8700F6D4F7 /* Algorand.pb.swift in Sources */,
+				4B9BA87D24B335E900F6D4F7 /* BitcoinSigner.swift in Sources */,
 				4B9BA85424B20A8700F6D4F7 /* Polkadot+Proto.swift in Sources */,
 				4B9BA84A24B20A8700F6D4F7 /* Ontology.pb.swift in Sources */,
 				4B9BA80A24B20A8700F6D4F7 /* SegwitAddress.swift in Sources */,

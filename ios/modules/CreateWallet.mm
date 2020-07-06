@@ -19,7 +19,7 @@
 #import "TWBitcoinProto.h"
 #import "TWAnySigner.h"
 
-         
+
 #include <stdio.h>
 #include "TWFoundationString.h"
 #include "TWFoundationData.h"
@@ -29,7 +29,8 @@
 
 #import <objc/message.h>
 #import <React/RCTConvert.h>
- 
+#import <walletOffline-Swift.h>
+
 @implementation CreateWallet
 
 
@@ -45,42 +46,56 @@ RCT_EXPORT_METHOD(HDWalletIsValid:(NSString *)mnemonic callback:(RCTResponseSend
   }
 }
 
+RCT_EXPORT_METHOD(bitcoinSign)
+{
+  BitcoinSigner *bitcoinSigner = [[BitcoinSigner alloc] init];
+  [bitcoinSigner bitcoinSign];
+}
+
+RCT_EXPORT_METHOD(ethSigner:(NSDictionary *)signerDic :(RCTResponseSenderBlock)callback)
+{
+  EthereumSigner *ethSigner = [[EthereumSigner alloc] init];
+  
+  [ethSigner ethsignerWithSignerDic :signerDic :callback];
+            
+}
+
 RCT_EXPORT_METHOD(getStoreKey:(NSString *)mnemonic :(NSString *) priKey :(RCTResponseSenderBlock)callback)
 {
-//  TWStoredKey* storyKey = TWStoredKeyImportHDWallet([self NSStringToTWString:mnemonic],
-//    [self NSStringToTWString:@"tokWallet"], [self NSStringToTWData:@"tokWallet"], TWCoinTypeBitcoin);
-//  NSString* storyKey_json = [self TWDataToNSString:TWStoredKeyExportJSON(storyKey)];
-  
-    
-//  extern TWString *_Nonnull TWAnySignerSignJSON(TWString *_Nonnull json, TWData *_Nonnull key, enum TWCoinType coin);
+  //  TWStoredKey* storyKey = TWStoredKeyImportHDWallet([self NSStringToTWString:mnemonic],
+  //    [self NSStringToTWString:@"tokWallet"], [self NSStringToTWData:@"tokWallet"], TWCoinTypeBitcoin);
+  //  NSString* storyKey_json = [self TWDataToNSString:TWStoredKeyExportJSON(storyKey)];
   
   
-    NSMutableDictionary *keyInfoDict = [[NSMutableDictionary alloc] init];
+  //  extern TWString *_Nonnull TWAnySignerSignJSON(TWString *_Nonnull json, TWData *_Nonnull key, enum TWCoinType coin);
   
-    NSString * aaaa= @"01";
- 
   
-    [keyInfoDict setObject:[self NSStringToNSData:aaaa] forKey:@"chainID"];
-//    [keyInfoDict setObject:@"09" forKey:@"nonce"];
-//    [keyInfoDict setObject:@"04a817c800" forKey:@"gasPrice"];
-//    [keyInfoDict setObject:@"5208" forKey:@"gasLimit"];
-//    [keyInfoDict setObject:@"0x3535353535353535353535353535353535353535" forKey:@"toAddress"];
-//    [keyInfoDict setObject:@"0de0b6b3a7640000" forKey:@"amount"];
-//    [keyInfoDict setObject:@"0x4646464646464646464646464646464646464646464646464646464646464646" forKey:@"privateKey"];
+  NSMutableDictionary *keyInfoDict = [[NSMutableDictionary alloc] init];
   
-
+  NSString * aaaa= @"01";
+  
+  
+  [keyInfoDict setObject:[self NSStringToNSData:aaaa] forKey:@"chainID"];
+  //    [keyInfoDict setObject:@"09" forKey:@"nonce"];
+  //    [keyInfoDict setObject:@"04a817c800" forKey:@"gasPrice"];
+  //    [keyInfoDict setObject:@"5208" forKey:@"gasLimit"];
+  //    [keyInfoDict setObject:@"0x3535353535353535353535353535353535353535" forKey:@"toAddress"];
+  //    [keyInfoDict setObject:@"0de0b6b3a7640000" forKey:@"amount"];
+  //    [keyInfoDict setObject:@"0x4646464646464646464646464646464646464646464646464646464646464646" forKey:@"privateKey"];
   
   
   
-    NSData *data=[NSJSONSerialization dataWithJSONObject:keyInfoDict options:NSJSONWritingPrettyPrinted error:nil];
+  
+  
+  NSData *data=[NSJSONSerialization dataWithJSONObject:keyInfoDict options:NSJSONWritingPrettyPrinted error:nil];
   
   
   
-    NSString *str=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-    TWString *a = TWAnySignerSign([self NSStringToTWData:aaaa], TWCoinTypeEthereum);
-
+  NSString *str=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+  TWString *a = TWAnySignerSign([self NSStringToTWData:aaaa], TWCoinTypeEthereum);
   
-
+  
+  
 }
 
 
@@ -130,22 +145,22 @@ RCT_EXPORT_METHOD(getStoreKey:(NSString *)mnemonic :(NSString *) priKey :(RCTRes
   //助记词
   NSString* mnemic = [self TWStringToNSString:TWHDWalletMnemonic(hdWallet)];
   NSLog(@"助记词%@", mnemic);
-
+  
   //种子
   TWData* seedData = TWHDWalletSeed(hdWallet);
   NSString* seed = [self TWDataToNSString:seedData];
   NSLog(@"种子%@", seed);
-
-  //rootKey
-  TWPrivateKey* priRootKey = TWHDWalletGetMasterKey(hdWallet, TWCurveSECP256k1);
-  TWData* priRootKey_twdata = TWPrivateKeyData(priRootKey);
-  NSString* result_priRootKey = [self TWDataToNSString:priRootKey_twdata];
-  NSLog(@"root私钥%@", result_priRootKey);
-
-
+  
+  // //rootKey
+  //  TWPrivateKey* priRootKey = TWHDWalletGetKeyForCoin(hdWallet, TWCurveSECP256k1);
+  //  TWData* priRootKey_twdata = TWPrivateKeyData(priRootKey);
+  //  NSString* result_priRootKey = [self TWDataToNSString:priRootKey_twdata];
+  //  NSLog(@"root私钥%@", result_priRootKey);
+  
+  
   //定义币种键值对
   NSMutableArray *coinArray = [[NSMutableArray alloc] init];
-
+  
   for (int i = 0; i < array.count; i++) {
     NSDictionary *obj = array[i];
     NSString *coinType = [RCTConvert NSString:obj[@"name"]];
@@ -156,13 +171,13 @@ RCT_EXPORT_METHOD(getStoreKey:(NSString *)mnemonic :(NSString *) priKey :(RCTRes
     if([coinType isEqualToString:@"ETH"]) {
       coinEnum = TWCoinTypeEthereum;
     }
-
+    
     //币种私钥
     TWPrivateKey* priKey = TWHDWalletGetKeyForCoin(hdWallet, coinEnum);
     TWData* priKey_twdata = TWPrivateKeyData(priKey);
     NSString* result_priKey = [self TWDataToNSString:priKey_twdata];
     NSLog(@"私钥%@", result_priKey);
-
+    
     //币种公钥
     TWPublicKey* pubKey;
     if([coinType isEqualToString:@"BTC"]) {
@@ -173,28 +188,28 @@ RCT_EXPORT_METHOD(getStoreKey:(NSString *)mnemonic :(NSString *) priKey :(RCTRes
     TWData* pubKey_TWdata = TWPublicKeyData(pubKey);
     NSString* result_pubKey = [self TWDataToNSString:pubKey_TWdata];
     NSLog(@"公钥%@", result_pubKey);
-
-
-
+    
+    
+    
     //扩展公钥与私钥
     TWString* extendPriKey = TWHDWalletGetExtendedPrivateKey(hdWallet, TWPurposeBIP44, coinEnum, TWHDVersionXPRV);
     NSString* result_extendPriKey = [self TWStringToNSString:extendPriKey];
     NSLog(@"扩展私钥%@", result_extendPriKey);
-
-
+    
+    
     TWString* extendPubKey = TWHDWalletGetExtendedPublicKey(hdWallet, TWPurposeBIP44, coinEnum, TWHDVersionXPUB);
     NSString* result_extendPubKey = [self TWStringToNSString:extendPubKey];
     NSLog(@"扩展公钥%@", result_extendPubKey);
-
-
+    
+    
     TWString* TWaddress = TWHDWalletGetAddressForCoin(hdWallet, coinEnum);
     NSString *result_address = [self TWStringToNSString:TWaddress];
     NSLog(@"地址%@", result_address);
-
+    
     NSMutableDictionary *keyInfoDict = [[NSMutableDictionary alloc] init];
     [keyInfoDict setObject:coinType forKey:@"coinType"];
-    [keyInfoDict setObject:result_extendPriKey forKey:@"priKey"];
-    [keyInfoDict setObject:result_extendPubKey forKey:@"pubKey"];
+    [keyInfoDict setObject:result_priKey forKey:@"priKey"];
+    [keyInfoDict setObject:result_pubKey forKey:@"pubKey"];
     [keyInfoDict setObject:result_address forKey:@"address"];
     [coinArray addObject:keyInfoDict];
   }
@@ -206,7 +221,7 @@ RCT_EXPORT_METHOD(getStoreKey:(NSString *)mnemonic :(NSString *) priKey :(RCTRes
   } else {
     [walletInfoDict setObject:mnemonic forKey:@"mnemic"];
   }
-
+  
   return walletInfoDict;
 }
 
@@ -237,7 +252,7 @@ RCT_EXPORT_METHOD(createMnemonic:(NSArray *)array callback:(RCTResponseSenderBlo
 
 RCT_EXPORT_METHOD(createAddress:(RCTResponseSenderBlock)callback )
 {
-
+  
 }
 
 

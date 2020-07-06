@@ -10,7 +10,7 @@
 
 #endif /* walletOffline_Bridging_Header_h */
 
-
+#import <React/RCTBridgeModule.h>
 #import "TrustWalletCore/TWAnySigner.h"
 #import "TrustWalletCore/TWBase58.h"
 #import "TrustWalletCore/TWFoundationData.h"
