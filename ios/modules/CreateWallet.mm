@@ -46,10 +46,10 @@ RCT_EXPORT_METHOD(HDWalletIsValid:(NSString *)mnemonic callback:(RCTResponseSend
   }
 }
 
-RCT_EXPORT_METHOD(bitcoinSign)
+RCT_EXPORT_METHOD(bitcoinSign:(NSDictionary *)signerDic :(RCTResponseSenderBlock)callback)
 {
   BitcoinSigner *bitcoinSigner = [[BitcoinSigner alloc] init];
-  [bitcoinSigner bitcoinSign];
+  [bitcoinSigner bitcoinSignWithSignerDic:signerDic :(RCTResponseSenderBlock)callback];
 }
 
 RCT_EXPORT_METHOD(ethSigner:(NSDictionary *)signerDic :(RCTResponseSenderBlock)callback)

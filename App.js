@@ -140,7 +140,7 @@ export class App extends React.Component {
         }
       }]
     }
-    EthereumSigner.bitcoinSignP2WSH();
+    // EthereumSigner.bitcoinSignP2WSH();
 
   }
   render() {

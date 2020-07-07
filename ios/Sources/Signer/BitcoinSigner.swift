@@ -25,7 +25,7 @@ class BitcoinSigner: NSObject {
     for index in 0...vin.count-1 {
       
       
-      utxos.append(vin[index])
+//      utxos.append(vin[index])
       
     }
     

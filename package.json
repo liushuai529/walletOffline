@@ -11,7 +11,21 @@
   },
   "dependencies": {
     "react": "16.11.0",
-    "react-native": "0.62.2"
+    "react-native": "0.62.2",
+    "react-native-camera": "^3.31.0",
+    "react-native-fast-image": "^8.1.5",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-qrcode-svg": "^6.0.6",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-screens": "^2.9.0",
+    "react-native-svg": "^12.1.0",
+    "react-native-swiper": "^1.6.0",
+    "react-navigation": "3.x",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.5",
+    "teaset": "^0.7.4"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
