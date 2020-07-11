@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Camera from 'react-native-camera'
+import { RNCamera, FaceDetector } from 'react-native-camera';
 import { StyleSheet, View, Text } from 'react-native'
 import QRScannerRectView from './QRScannerRectView'
 
@@ -69,7 +69,7 @@ export default class QRScannerView extends PureComponent {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <Camera
+        <RNCamera
           onBarCodeRead={this.props.onScanResultReceived}
           style={{ flex: 1 }}
           permissionDialogTitle="相机请求权限"
@@ -127,7 +127,7 @@ export default class QRScannerView extends PureComponent {
             {this.props.renderBottomMenuView()}
           </View>
 
-        </Camera>
+        </RNCamera>
       </View>
     )
   }

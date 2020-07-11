@@ -38,3 +38,10 @@ export function createWallet() {
   }
 }
 
+export function signerCoinType(payload) {
+  return {
+    type: 'wallet/signer_coin_type',
+    payload,
+  }
+}
+

@@ -160,7 +160,6 @@ class Wallet extends Component {
 
   render() {
     const { coinInfoArray, mnemic } = this.props;
-    console.warn('getRedux', this.props);
     return (
       <View style={styles.container}>
 

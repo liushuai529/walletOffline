@@ -260,6 +260,7 @@ class Navigator extends React.Component {
         ShowMnemonicWords,
         VerifyWrods,
         ImportWallet,
+        ScanBarCode,
       },
       defaultNavigationOptions,
     );

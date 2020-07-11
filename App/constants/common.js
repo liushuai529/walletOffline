@@ -248,6 +248,10 @@ const common = {
 
   messageBarDur: 2000,
 
+  getQRcodeLength() {
+    return 100
+  },
+
   dfSimplifyDateWithSymbol(dateStr, symbol) {
     const createdAtDate = new Date(dateStr);
     const getYear = createdAtDate.getFullYear();

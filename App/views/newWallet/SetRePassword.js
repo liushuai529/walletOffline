@@ -45,7 +45,8 @@ class SetRePassword extends Component {
           />
         </NextTouchableOpacity>
       ),
-      headerRight: params && params.next ? (
+      // headerRight: params && params.next ? (
+      headerRight: params ? (
         <NextTouchableOpacity
           style={{ flexDirection: 'row', alignItems: 'center' }}
           activeOpacity={common.activeOpacity}
@@ -193,7 +194,8 @@ class SetRePassword extends Component {
               inputStyle={{
                 fontSize: common.font14,
               }}
-              value={repwd}
+              // value={repwd}
+              value={'a'}
               onChangeText={this.handlePwd}
             />
           </View>

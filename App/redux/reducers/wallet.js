@@ -5,6 +5,7 @@ const initialState = {
   coinInfoArray: [],
   operationType: 0,
   isLogin: false,
+  signerCoinType: '',
 }
 
 export default function wallet(state = initialState, action) {
@@ -46,6 +47,13 @@ export default function wallet(state = initialState, action) {
       nextState = {
         ...state,
         isLogin: true,
+      }
+      break
+
+    case 'wallet/signer_coin_type':
+      nextState = {
+        ...state,
+        signerCoinType: payload,
       }
       break
     default:

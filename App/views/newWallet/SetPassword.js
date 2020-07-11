@@ -59,7 +59,8 @@ class SetPassword extends Component {
           />
         </NextTouchableOpacity>
       ),
-      headerRight: params && params.next ? (
+      // headerRight: params && params.next ? (
+      headerRight: params ? (  
         <NextTouchableOpacity
           style={{ flexDirection: 'row', alignItems: 'center' }}
           activeOpacity={common.activeOpacity}
@@ -112,7 +113,8 @@ class SetPassword extends Component {
 
   handlePwd = pwd => {
     this.setState({ pwd });
-    if(this.checkPwd(pwd)) {
+    // if(this.checkPwd(pwd)) {
+     if(true){
       this.props.navigation.setParams({next: true, pwd})
     } else {
       this.props.navigation.setParams({next: false, pwd}) 
@@ -180,7 +182,8 @@ class SetPassword extends Component {
               inputStyle={{
                 fontSize: common.font14,
               }}
-              value={pwd}
+              // value={pwd}
+              value={'a'}
               onChangeText={this.handlePwd}
             />
           </View>

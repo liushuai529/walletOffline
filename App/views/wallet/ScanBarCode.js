@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Image, Alert } from 'react-native'
+import { Image, Alert, Text } from 'react-native'
 import { common } from '../../constants/common'
 import QRScannerView from './scan/QRScannerView'
 import NextTouchableOpacity from '../../components/NextTouchableOpacity'
@@ -8,10 +8,10 @@ import NextTouchableOpacity from '../../components/NextTouchableOpacity'
 
 class ScanBarCode extends Component {
   static navigationOptions(props) {
-    let title = ''
-    if (props.navigation.state.params) {
-      title = props.navigation.state.params.title
-    }
+    let title = '扫一扫'
+    // if (props.navigation.state.params) {
+    //   title = props.navigation.state.params.title
+    // }
     return {
       headerTitle: title,
       headerLeft:
@@ -44,38 +44,27 @@ class ScanBarCode extends Component {
   }
 
   componentDidMount() {
-    const { navigation } = this.props
-    navigation.setParams({
-      title: '扫一扫',
-    })
+    
   }
 
   barcodeReceived(barCode) {
+
+    const { navigation } = this.props
+    const { didScan } = navigation.state.params
+    
     if (this.didFindData) {
       return
     }
     this.didFindData = true
-    const { navigation } = this.props
-    // const { coin, didScan, showName } = navigation.state.params
     const data = barCode.data
     var address = data
-    let pos = address.indexOf(':')
-    if(pos >= 0 && pos != (address.length - 1)){
-      address = address.substring(pos + 1)
-    }
-
-    let item = coin
-    if(coinIdDic && coinIdDic[item] && coinIdDic[item].contract.chain){
-      item = coinIdDic[item].contract.chain
-    }
-
-    const disMatch = barCode.data.length;
-
-    if (disMatch) {
+    const disMatch = address;
+    
+    if (!disMatch) {
       
       Alert.alert(
         '提示',
-        `交易信息格式有误`,
+        `获取二维码信息失败`,
         [
           {
             text: '确定',

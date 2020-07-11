@@ -46,10 +46,10 @@ RCT_EXPORT_METHOD(HDWalletIsValid:(NSString *)mnemonic callback:(RCTResponseSend
   }
 }
 
-RCT_EXPORT_METHOD(bitcoinSign:(NSDictionary *)signerDic :(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(btcSign:(NSDictionary *)signerDic :(RCTResponseSenderBlock)callback)
 {
   BitcoinSigner *bitcoinSigner = [[BitcoinSigner alloc] init];
-  [bitcoinSigner bitcoinSignWithSignerDic:signerDic :(RCTResponseSenderBlock)callback];
+  [bitcoinSigner btcSignWithSignerDic :signerDic :(RCTResponseSenderBlock)callback];
 }
 
 RCT_EXPORT_METHOD(ethSigner:(NSDictionary *)signerDic :(RCTResponseSenderBlock)callback)
@@ -57,7 +57,6 @@ RCT_EXPORT_METHOD(ethSigner:(NSDictionary *)signerDic :(RCTResponseSenderBlock)c
   EthereumSigner *ethSigner = [[EthereumSigner alloc] init];
   
   [ethSigner ethsignerWithSignerDic :signerDic :callback];
-            
 }
 
 RCT_EXPORT_METHOD(getStoreKey:(NSString *)mnemonic :(NSString *) priKey :(RCTResponseSenderBlock)callback)
@@ -191,15 +190,7 @@ RCT_EXPORT_METHOD(getStoreKey:(NSString *)mnemonic :(NSString *) priKey :(RCTRes
     
     
     
-    //扩展公钥与私钥
-    TWString* extendPriKey = TWHDWalletGetExtendedPrivateKey(hdWallet, TWPurposeBIP44, coinEnum, TWHDVersionXPRV);
-    NSString* result_extendPriKey = [self TWStringToNSString:extendPriKey];
-    NSLog(@"扩展私钥%@", result_extendPriKey);
     
-    
-    TWString* extendPubKey = TWHDWalletGetExtendedPublicKey(hdWallet, TWPurposeBIP44, coinEnum, TWHDVersionXPUB);
-    NSString* result_extendPubKey = [self TWStringToNSString:extendPubKey];
-    NSLog(@"扩展公钥%@", result_extendPubKey);
     
     
     TWString* TWaddress = TWHDWalletGetAddressForCoin(hdWallet, coinEnum);

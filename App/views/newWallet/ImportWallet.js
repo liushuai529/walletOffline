@@ -21,6 +21,7 @@ import NextTouchableOpacity from '../../components/NextTouchableOpacity';
 
 class ImportWallet extends Component {
   static navigationOptions(props) {
+    let scanWords = props.navigation.state.params ? props.navigation.state.params.scanWords : null;
     return {
       headerTitle: '导入钱包',
       headerLeft: (
@@ -31,7 +32,8 @@ class ImportWallet extends Component {
             justifyContent: 'center',
           }}
           activeOpacity={common.activeOpacity}
-          onPress={() => props.navigation.goBack()}>
+          onPress={() => props.navigation.goBack()}
+        >
           <Image
             style={{
               marginLeft: common.margin10,
@@ -42,6 +44,30 @@ class ImportWallet extends Component {
           />
         </NextTouchableOpacity>
       ),
+      headerRight: (
+        <NextTouchableOpacity
+          style={{ flexDirection: 'row', alignItems: 'center' }}
+          activeOpacity={common.activeOpacity}
+          // onPress={() => props.navigation.navigate('Wallet')}
+          onPress={() => {
+            props.navigation.navigate('ScanBarCode', {
+              didScan: val => {
+                if(scanWords) scanWords(val) 
+              },
+            });
+          }}
+        >
+          <Image
+            style={{
+              marginRight: common.margin10,
+              width: common.w20,
+              height: common.h20,
+            }}
+            source={require('../../resource/assets/wallet_scan.png')}
+          />
+
+        </NextTouchableOpacity>
+      )
     };
   }
 
@@ -53,7 +79,10 @@ class ImportWallet extends Component {
 
   }
   componentDidMount() {
-
+    const { navigation } = this.props;
+    navigation.setParams({
+      scanWords: this.scanWords
+    })
   }
 
   componentWillUnmount() {
@@ -63,8 +92,8 @@ class ImportWallet extends Component {
 
 
 
-  componentWillReceiveProps(nextProps) {
-
+  scanWords = words => {
+    this.setState({ words });
   }
 
 
@@ -80,11 +109,11 @@ class ImportWallet extends Component {
   onConfirmWords() {
     if (!this.state.words) return;
     const { dispatch, navigation } = this.props;
-    
+
     const CreateWallet = NativeModules.CreateWallet;
     CreateWallet.HDWalletIsValid(this.state.words.replace(/(\s*$)/g, ""), (error) => {
       if (!error) {
-        
+
         dispatch(updateOperationType(1));
         cache.setObject('mnemic', this.state.words.replace(/(\s*$)/g, ""));
         navigation.navigate('SetPassword', { dispatch })
@@ -155,7 +184,7 @@ class ImportWallet extends Component {
 function mapStateToProps(state) {
   return {
     ...state.wallet,
- 
+
   };
 }
 

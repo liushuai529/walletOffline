@@ -17,6 +17,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* walletOfflineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* walletOfflineTests.m */; };
+		4B88B3D424B5990600C34D0C /* libReact-RCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B88B3D324B5990600C34D0C /* libReact-RCTAnimation.a */; };
 		4B9BA60D24B1CFD200F6D4F7 /* libTrustWalletCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C024B1CFD100F6D4F7 /* libTrustWalletCore.a */; };
 		4B9BA60E24B1CFD200F6D4F7 /* libTrezorCrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C124B1CFD200F6D4F7 /* libTrezorCrypto.a */; };
 		4B9BA60F24B1CFD200F6D4F7 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9BA5C224B1CFD200F6D4F7 /* libprotobuf.a */; };
@@ -180,6 +181,7 @@
 		2D02E47B1E0B4A5D006451C7 /* walletOffline-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walletOffline-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* walletOffline-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "walletOffline-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35235DB7BB3D990DF7D8626A /* libPods-walletOffline-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-walletOffline-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B88B3D324B5990600C34D0C /* libReact-RCTAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9BA5C024B1CFD100F6D4F7 /* libTrustWalletCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTrustWalletCore.a; sourceTree = "<group>"; };
 		4B9BA5C124B1CFD200F6D4F7 /* libTrezorCrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTrezorCrypto.a; sourceTree = "<group>"; };
 		4B9BA5C224B1CFD200F6D4F7 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotobuf.a; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B88B3D424B5990600C34D0C /* libReact-RCTAnimation.a in Frameworks */,
 				4B9BA60F24B1CFD200F6D4F7 /* libprotobuf.a in Frameworks */,
 				4B9BA60D24B1CFD200F6D4F7 /* libTrustWalletCore.a in Frameworks */,
 				19AB8D2975380A1E987FD75B /* libPods-walletOffline.a in Frameworks */,
@@ -465,6 +468,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B88B3D324B5990600C34D0C /* libReact-RCTAnimation.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				09D1EBEB9D068CB897F6CF40 /* libPods-walletOffline.a */,
@@ -884,6 +888,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = L5HWT4LWNP;
 						LastSwiftMigration = 1150;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -1345,6 +1350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5HWT4LWNP;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -1377,6 +1383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5HWT4LWNP;
 				INFOPLIST_FILE = walletOffline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
